@@ -1,0 +1,26 @@
+# Introduction to Category 1
+
+This is the main page for Category 1's first subcategory.
+
+## Section 1.1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+## Section 1.2
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+### Subsection 1.2.1
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+## Tables
+
+| Column 1 | Column 2 | Column 3 |
+|----------|----------|----------|
+| Value 1  | Value 2  | Value 3  |
+| Item A   | Item B   | Item C   |
+
+## Cross-references
+
+You can reference other sections using @sec-advanced-topics.

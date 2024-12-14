@@ -1,0 +1,18 @@
+/.quarto/
+/_site/
+/_book/
+/.ipynb_checkpoints
+**/.ipynb_checkpoints
+.DS_Store
+**/.DS_Store
+
+# Auto-generated files
+_quarto.yml
+
+# Temporary files
+*.log
+*.tmp
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata

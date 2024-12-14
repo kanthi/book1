@@ -1,0 +1,57 @@
+# Visual Elements
+
+## Effective Use of Images
+
+### Image Guidelines
+
+1. Use relevant images
+2. Maintain consistent style
+3. Provide clear captions
+4. Optimize for different formats
+
+### Example Figures
+
+![Placeholder for diagram](https://via.placeholder.com/600x300?text=Diagram+Example)
+
+## Tables and Charts
+
+### Data Presentation
+
+| Category | Print | Digital | Notes |
+|----------|--------|----------|-------|
+| Resolution | 300dpi | 72dpi | Adjust per medium |
+| Color | CMYK | RGB | Consider output |
+| Size | Fixed | Responsive | Plan accordingly |
+
+### Layout Considerations
+
+::: {.callout-important}
+## Layout Tips
+- Consider page breaks
+- Mind the margins
+- Balance text and visuals
+:::
+
+## Interactive Elements
+
+::: {.panel-tabset}
+### Static Version
+Content for print format
+
+### Interactive Version
+Content for digital format
+
+### Hybrid Approach
+Best of both worlds
+:::
+
+## Accessibility Guidelines
+
+1. Alt text for images
+2. Color contrast
+3. Text alternatives
+4. Screen reader support
+
+::: {.column-margin}
+Remember to test accessibility with different tools and users.
+:::

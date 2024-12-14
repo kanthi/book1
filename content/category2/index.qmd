@@ -1,0 +1,58 @@
+# Category 2 Content
+
+## Document Features
+
+This category demonstrates different document formatting options and features.
+
+## Images and Figures
+
+![Sample Image](https://via.placeholder.com/400x300)
+
+## Tabbed Content
+
+::: {.panel-tabset}
+### First Tab
+
+Content for the first tab, discussing main points.
+
+### Second Tab
+
+Additional information and details in the second tab.
+
+### Third Tab
+
+Supplementary content and references.
+:::
+
+## Citations and References
+
+Here's a sentence with a footnote[^1].
+
+[^1]: This is the footnote content explaining the reference.
+
+## Definition Lists
+
+Term 1
+: Definition of the first term
+: Additional details about the first term
+
+Term 2
+: Explanation of the second term
+
+## Margin Content
+
+This is the main text of the document.
+
+::: {.column-margin}
+This is supplementary content that appears in the margin in HTML output.
+:::
+
+## Special Formatting
+
+1. **Bold text** for emphasis
+2. *Italic text* for subtle emphasis
+3. `Monospace text` for technical terms
+4. ~~Strikethrough~~ for removed content
+5. [Links](https://example.com) for references
+
+> This is a blockquote that can be used to highlight important quotes or excerpts from other sources.

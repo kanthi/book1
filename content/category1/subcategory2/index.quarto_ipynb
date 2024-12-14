@@ -1,0 +1,78 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "# Advanced Topics {#sec-advanced-topics}\n",
+        "\n",
+        "This section covers more advanced features of Quarto.\n",
+        "\n",
+        "## Diagrams with Mermaid\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "```{mermaid}\n",
+        "graph TD\n",
+        "    A[Start] --> B{Is it working?}\n",
+        "    B -->|Yes| C[Great!]\n",
+        "    B -->|No| D[Debug]\n",
+        "    D --> B\n",
+        "```\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "## Callouts\n",
+        "\n",
+        "::: {.callout-note}\n",
+        "This is a note callout block.\n",
+        ":::\n",
+        "\n",
+        "::: {.callout-warning}\n",
+        "This is a warning callout block.\n",
+        ":::\n",
+        "\n",
+        "::: {.callout-tip}\n",
+        "## Pro Tip\n",
+        "You can even add titles to callouts!\n",
+        ":::\n",
+        "\n",
+        "## Interactive Elements\n"
+      ],
+      "id": "6410cad3"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| eval: false\n",
+        "import plotly.express as px\n",
+        "df = px.data.iris()\n",
+        "fig = px.scatter(df, x=\"sepal_width\", y=\"sepal_length\", color=\"species\")\n",
+        "fig.show()"
+      ],
+      "id": "b60d2067",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

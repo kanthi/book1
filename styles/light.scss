@@ -1,0 +1,43 @@
+/*-- scss:defaults --*/
+// Base document colors
+$body-bg: #ffffff;
+$body-color: #2c3e50;
+$link-color: #2980b9;
+
+// Navigation
+$navbar-bg: #f8f9fa;
+$navbar-fg: $body-color;
+$navbar-hl: $link-color;
+
+// Sidebar
+$sidebar-bg: #f8f9fa;
+$sidebar-fg: $body-color;
+$sidebar-hl: $link-color;
+
+// Code blocks
+$code-block-bg: #f8f9fa;
+$code-block-border-left: #dee2e6;
+
+// Inline code
+$code-bg: #f8f9fa;
+$code-color: #e83e8c;
+
+/*-- scss:rules --*/
+.sidebar-title {
+  color: $body-color;
+}
+
+.sidebar nav[role=doc-toc] ul>li>a.active {
+  border-left: 1px solid $link-color;
+  color: $link-color !important;
+}
+
+.sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+  border-left: 1px solid $link-color;
+  color: $link-color !important;
+}
+
+.nav-footer {
+  border-top: 1px solid #dee2e6;
+  padding-top: 1em;
+}

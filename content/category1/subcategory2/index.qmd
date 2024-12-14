@@ -1,0 +1,38 @@
+# Advanced Topics {#sec-advanced-topics}
+
+## Document Organization
+
+Good document organization is crucial for readability and maintainability.
+
+### Sections and Subsections
+
+Breaking down content into logical sections helps readers navigate the material effectively.
+
+## Callouts
+
+::: {.callout-note}
+This is a note callout block for important information.
+:::
+
+::: {.callout-warning}
+This is a warning callout block for critical warnings.
+:::
+
+::: {.callout-tip}
+## Pro Tip
+You can add titles to callouts to make them more descriptive!
+:::
+
+## Lists and Formatting
+
+1. **Ordered Lists**: Like this one
+2. With multiple items
+   - And sub-items
+   - That can be nested
+3. For structured content
+
+### Emphasis and Highlighting
+
+You can use *italics* and **bold** text for emphasis. Also `inline code` for technical terms.
+
+> Important quotes or excerpts can be blockquoted like this for emphasis and visual distinction.
