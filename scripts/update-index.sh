@@ -36,7 +36,7 @@ get_metadata() {
     local dirname=$(basename "$dir")
     local order=""
     local title=""
-    
+
     # Extract order if present (format: XX-)
     if [[ $dirname =~ ^[0-9]+ ]]; then
         order="${BASH_REMATCH[0]}"
@@ -45,7 +45,7 @@ get_metadata() {
         order="99"
         title=$(echo "$dirname" | sed 's/-/ /g' | awk '{for(i=1;i<=NF;i++)sub(/./,toupper(substr($i,1,1)),$i)}1')
     fi
-    
+
     echo "${order}|${title}"
 }
 
@@ -60,7 +60,7 @@ project:
 
 book:
   title: "KINGsNOTES"
-  author: "K19N"
+  author: "K19G"
   date: last-modified
   navbar:
     pinned: true
@@ -115,7 +115,7 @@ process_directory() {
             local subdir_name=$(basename "$subdir")
             echo "        - section: \"$subdir_name\"" >> "$TMP_FILE"
             echo "          contents:" >> "$TMP_FILE"
-            
+
             for ext in "qmd" "md"; do
                 for doc in "$subdir"/*.$ext; do
                     if [ -f "$doc" ]; then
