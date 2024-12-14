@@ -1,0 +1,547 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Book Title",
+    "section": "",
+    "text": "Preface\nWelcome to this book!",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#structure",
+    "href": "index.html#structure",
+    "title": "Book Title",
+    "section": "Structure",
+    "text": "Structure\nThis book is organized into categories and subcategories to help you navigate the content effectively.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use-this-book",
+    "href": "index.html#how-to-use-this-book",
+    "title": "Book Title",
+    "section": "How to Use This Book",
+    "text": "How to Use This Book\nYou can read this book in various formats:\n\nOnline HTML version\nDownloadable PDF\nEPUB for e-readers",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#prerequisites",
+    "href": "index.html#prerequisites",
+    "title": "Book Title",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nList any prerequisites or requirements here.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#acknowledgments",
+    "href": "index.html#acknowledgments",
+    "title": "Book Title",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nAdd acknowledgments here.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "content/category1/subcategory1/index.html",
+    "href": "content/category1/subcategory1/index.html",
+    "title": "Introduction to Category 1",
+    "section": "",
+    "text": "Section 1.1\nThis is the main page for Category 1’s first subcategory.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "crumbs": [
+      "Getting Started",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "content/category1/subcategory1/index.html#section-1.2",
+    "href": "content/category1/subcategory1/index.html#section-1.2",
+    "title": "Introduction to Category 1",
+    "section": "Section 1.2",
+    "text": "Section 1.2\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nSubsection 1.2.1\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "crumbs": [
+      "Getting Started",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "content/category1/subcategory1/index.html#tables",
+    "href": "content/category1/subcategory1/index.html#tables",
+    "title": "Introduction to Category 1",
+    "section": "Tables",
+    "text": "Tables\n\n\n\nColumn 1\nColumn 2\nColumn 3\n\n\n\n\nValue 1\nValue 2\nValue 3\n\n\nItem A\nItem B\nItem C",
+    "crumbs": [
+      "Getting Started",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "content/category1/subcategory1/index.html#cross-references",
+    "href": "content/category1/subcategory1/index.html#cross-references",
+    "title": "Introduction to Category 1",
+    "section": "Cross-references",
+    "text": "Cross-references\nYou can reference other sections using Advanced Topics.",
+    "crumbs": [
+      "Getting Started",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "content/category1/subcategory2/index.html",
+    "href": "content/category1/subcategory2/index.html",
+    "title": "Advanced Topics",
+    "section": "",
+    "text": "Document Organization\nGood document organization is crucial for readability and maintainability.",
+    "crumbs": [
+      "Getting Started",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "content/category1/subcategory2/index.html#document-organization",
+    "href": "content/category1/subcategory2/index.html#document-organization",
+    "title": "Advanced Topics",
+    "section": "",
+    "text": "Sections and Subsections\nBreaking down content into logical sections helps readers navigate the material effectively.",
+    "crumbs": [
+      "Getting Started",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "content/category1/subcategory2/index.html#callouts",
+    "href": "content/category1/subcategory2/index.html#callouts",
+    "title": "Advanced Topics",
+    "section": "Callouts",
+    "text": "Callouts\n\n\n\n\n\n\nNote\n\n\n\nThis is a note callout block for important information.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nThis is a warning callout block for critical warnings.\n\n\n\n\n\n\n\n\nPro Tip\n\n\n\nYou can add titles to callouts to make them more descriptive!",
+    "crumbs": [
+      "Getting Started",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "content/category1/subcategory2/index.html#lists-and-formatting",
+    "href": "content/category1/subcategory2/index.html#lists-and-formatting",
+    "title": "Advanced Topics",
+    "section": "Lists and Formatting",
+    "text": "Lists and Formatting\n\nOrdered Lists: Like this one\nWith multiple items\n\nAnd sub-items\nThat can be nested\n\nFor structured content\n\n\nEmphasis and Highlighting\nYou can use italics and bold text for emphasis. Also inline code for technical terms.\n\nImportant quotes or excerpts can be blockquoted like this for emphasis and visual distinction.",
+    "crumbs": [
+      "Getting Started",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "content/category1/subcategory3/index.html",
+    "href": "content/category1/subcategory3/index.html",
+    "title": "Writing Best Practices",
+    "section": "",
+    "text": "Style Guidelines",
+    "crumbs": [
+      "Getting Started",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "content/category1/subcategory3/index.html#style-guidelines",
+    "href": "content/category1/subcategory3/index.html#style-guidelines",
+    "title": "Writing Best Practices",
+    "section": "",
+    "text": "Consistency in Writing\nMaintaining a consistent writing style throughout your document helps readers follow your content more easily.\n\nUse consistent terminology\nMaintain consistent formatting\nKeep a consistent tone\n\n\n\nVoice and Tone\nChoose an appropriate voice for your audience:\n\nTechnical audience\n\nBe precise and direct\nUse industry-standard terminology\nProvide relevant examples\n\nGeneral audience\n\nUse clear, simple language\nExplain technical terms\nInclude more context",
+    "crumbs": [
+      "Getting Started",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "content/category1/subcategory3/index.html#document-structure",
+    "href": "content/category1/subcategory3/index.html#document-structure",
+    "title": "Writing Best Practices",
+    "section": "Document Structure",
+    "text": "Document Structure\n\nHeaders and Sections\n\n\n\n\n\n\nTip: Header Hierarchy\n\n\n\nUse headers to create a clear content hierarchy: - H1 for main titles - H2 for major sections - H3 for subsections\n\n\n\n\nLists and Bullets\nEffective use of lists:\n\nMain points\n\nSupporting details\nAdditional information\n\nNext main point\n\nRelated subtopics\nMore details",
+    "crumbs": [
+      "Getting Started",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "content/category1/subcategory3/index.html#review-process",
+    "href": "content/category1/subcategory3/index.html#review-process",
+    "title": "Writing Best Practices",
+    "section": "Review Process",
+    "text": "Review Process\n\nSelf-review\nPeer review\nTechnical review\nFinal editorial review",
+    "crumbs": [
+      "Getting Started",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "content/category1/subcategory4/index.html",
+    "href": "content/category1/subcategory4/index.html",
+    "title": "Document Planning",
+    "section": "",
+    "text": "Content Strategy",
+    "crumbs": [
+      "Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "content/category1/subcategory4/index.html#content-strategy",
+    "href": "content/category1/subcategory4/index.html#content-strategy",
+    "title": "Document Planning",
+    "section": "",
+    "text": "Audience Analysis\nBefore writing, consider your audience:\n\n\n\nAspect\nTechnical Audience\nGeneral Audience\n\n\n\n\nLanguage\nTechnical terms\nSimple explanations\n\n\nDetail Level\nIn-depth\nOverview\n\n\nExamples\nCode/Technical\nReal-world\n\n\nAssumptions\nDomain knowledge\nBasic understanding\n\n\n\n\n\nContent Organization\n\n\n\n\n\n\nNote\n\n\n\nGood organization is key to effective documentation\n\n\n\nStart with an outline\nGroup related topics\nCreate logical flow\nReview and adjust",
+    "crumbs": [
+      "Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "content/category1/subcategory4/index.html#research-methods",
+    "href": "content/category1/subcategory4/index.html#research-methods",
+    "title": "Document Planning",
+    "section": "Research Methods",
+    "text": "Research Methods\n\nPrimary Sources\n\nDirect observations\nOriginal research\nFirst-hand accounts\n\n\n\nSecondary Sources\n\nLiterature reviews\nExpert analyses\nCase studies",
+    "crumbs": [
+      "Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "content/category1/subcategory4/index.html#timeline-planning",
+    "href": "content/category1/subcategory4/index.html#timeline-planning",
+    "title": "Document Planning",
+    "section": "Timeline Planning",
+    "text": "Timeline Planning\n\nPhase 1Phase 2Phase 3\n\n\n\nInitial research\nOutline creation\nStakeholder review\n\n\n\n\nContent development\nTechnical review\nRevisions\n\n\n\n\nFinal editing\nPublication\nDistribution",
+    "crumbs": [
+      "Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "content/category1/subcategory4/index.html#quality-metrics",
+    "href": "content/category1/subcategory4/index.html#quality-metrics",
+    "title": "Document Planning",
+    "section": "Quality Metrics",
+    "text": "Quality Metrics\n\n“Measure twice, cut once” applies to documentation too.\n\nQuality checkpoints: 1. Technical accuracy 2. Completeness 3. Clarity 4. Consistency 5. Accessibility",
+    "crumbs": [
+      "Getting Started",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "content/category2/subcategory1/index.html",
+    "href": "content/category2/subcategory1/index.html",
+    "title": "Visual Elements",
+    "section": "",
+    "text": "Effective Use of Images",
+    "crumbs": [
+      "Advanced Topics",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Advanced Topics</span>"
+    ]
+  },
+  {
+    "objectID": "content/category2/subcategory1/index.html#effective-use-of-images",
+    "href": "content/category2/subcategory1/index.html#effective-use-of-images",
+    "title": "Visual Elements",
+    "section": "",
+    "text": "Image Guidelines\n\nUse relevant images\nMaintain consistent style\nProvide clear captions\nOptimize for different formats\n\n\n\nExample Figures\n\n\n\nPlaceholder for diagram",
+    "crumbs": [
+      "Advanced Topics",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Advanced Topics</span>"
+    ]
+  },
+  {
+    "objectID": "content/category2/subcategory1/index.html#tables-and-charts",
+    "href": "content/category2/subcategory1/index.html#tables-and-charts",
+    "title": "Visual Elements",
+    "section": "Tables and Charts",
+    "text": "Tables and Charts\n\nData Presentation\n\n\n\nCategory\nPrint\nDigital\nNotes\n\n\n\n\nResolution\n300dpi\n72dpi\nAdjust per medium\n\n\nColor\nCMYK\nRGB\nConsider output\n\n\nSize\nFixed\nResponsive\nPlan accordingly\n\n\n\n\n\nLayout Considerations\n\n\n\n\n\n\nLayout Tips\n\n\n\n\nConsider page breaks\nMind the margins\nBalance text and visuals",
+    "crumbs": [
+      "Advanced Topics",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Advanced Topics</span>"
+    ]
+  },
+  {
+    "objectID": "content/category2/subcategory1/index.html#interactive-elements",
+    "href": "content/category2/subcategory1/index.html#interactive-elements",
+    "title": "Visual Elements",
+    "section": "Interactive Elements",
+    "text": "Interactive Elements\n\nStatic VersionInteractive VersionHybrid Approach\n\n\nContent for print format\n\n\nContent for digital format\n\n\nBest of both worlds",
+    "crumbs": [
+      "Advanced Topics",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Advanced Topics</span>"
+    ]
+  },
+  {
+    "objectID": "content/category2/subcategory1/index.html#accessibility-guidelines",
+    "href": "content/category2/subcategory1/index.html#accessibility-guidelines",
+    "title": "Visual Elements",
+    "section": "Accessibility Guidelines",
+    "text": "Accessibility Guidelines\n\nAlt text for images\nColor contrast\nText alternatives\nScreen reader support\n\n\n\n\n\nRemember to test accessibility with different tools and users.",
+    "crumbs": [
+      "Advanced Topics",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Advanced Topics</span>"
+    ]
+  },
+  {
+    "objectID": "content/category2/subcategory2/index.html",
+    "href": "content/category2/subcategory2/index.html",
+    "title": "Publication Formats",
+    "section": "",
+    "text": "Print Considerations",
+    "crumbs": [
+      "Advanced Topics",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Advanced Topics</span>"
+    ]
+  },
+  {
+    "objectID": "content/category2/subcategory2/index.html#print-considerations",
+    "href": "content/category2/subcategory2/index.html#print-considerations",
+    "title": "Publication Formats",
+    "section": "",
+    "text": "Paper Selection\nDifferent paper types and their uses:\n\nBond paper\n\nStandard documents\nInternal drafts\n\nCoated paper\n\nHigh-quality images\nProfessional publications\n\n\n\n\nBinding Options\n\n\n\n\n\n\nNote\n\n\n\nChoose binding based on: - Document length - Usage patterns - Budget constraints",
+    "crumbs": [
+      "Advanced Topics",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Advanced Topics</span>"
+    ]
+  },
+  {
+    "objectID": "content/category2/subcategory2/index.html#digital-formats",
+    "href": "content/category2/subcategory2/index.html#digital-formats",
+    "title": "Publication Formats",
+    "section": "Digital Formats",
+    "text": "Digital Formats\n\nFormat Comparison\n\n\n\nFormat\nAdvantages\nDisadvantages\n\n\n\n\nPDF\nUniversal support\nLimited interactivity\n\n\nHTML\nHighly interactive\nRequires internet\n\n\nEPUB\nGood for ebooks\nDevice dependent\n\n\n\n\n\nDigital Enhancements\n\nHyperlinks\nBookmarks\nSearch functionality\nInteractive elements",
+    "crumbs": [
+      "Advanced Topics",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Advanced Topics</span>"
+    ]
+  },
+  {
+    "objectID": "content/category2/subcategory2/index.html#cross-format-compatibility",
+    "href": "content/category2/subcategory2/index.html#cross-format-compatibility",
+    "title": "Publication Formats",
+    "section": "Cross-Format Compatibility",
+    "text": "Cross-Format Compatibility\n\nLayoutContentNavigation\n\n\n\nResponsive design\nFluid typography\nFlexible images\n\n\n\n\nFormat-neutral writing\nAlternative text\nFallback options\n\n\n\n\nConsistent structure\nClear hierarchy\nMultiple access points",
+    "crumbs": [
+      "Advanced Topics",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Advanced Topics</span>"
+    ]
+  },
+  {
+    "objectID": "content/category2/subcategory2/index.html#best-practices",
+    "href": "content/category2/subcategory2/index.html#best-practices",
+    "title": "Publication Formats",
+    "section": "Best Practices",
+    "text": "Best Practices\n\nFocus on content first, then optimize for each format.\n\n\n\n\n\n\n\nKey Considerations\n\n\n\n\nTest on multiple devices\nVerify all features work\nCheck accessibility\nValidate links and references",
+    "crumbs": [
+      "Advanced Topics",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Advanced Topics</span>"
+    ]
+  },
+  {
+    "objectID": "content/category2/index.html",
+    "href": "content/category2/index.html",
+    "title": "Category 2 Content",
+    "section": "",
+    "text": "Document Features\nThis category demonstrates different document formatting options and features.",
+    "crumbs": [
+      "Advanced Topics",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Advanced Topics</span>"
+    ]
+  },
+  {
+    "objectID": "content/category2/index.html#images-and-figures",
+    "href": "content/category2/index.html#images-and-figures",
+    "title": "Category 2 Content",
+    "section": "Images and Figures",
+    "text": "Images and Figures\n\n\n\nSample Image",
+    "crumbs": [
+      "Advanced Topics",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Advanced Topics</span>"
+    ]
+  },
+  {
+    "objectID": "content/category2/index.html#tabbed-content",
+    "href": "content/category2/index.html#tabbed-content",
+    "title": "Category 2 Content",
+    "section": "Tabbed Content",
+    "text": "Tabbed Content\n\nFirst TabSecond TabThird Tab\n\n\nContent for the first tab, discussing main points.\n\n\nAdditional information and details in the second tab.\n\n\nSupplementary content and references.",
+    "crumbs": [
+      "Advanced Topics",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Advanced Topics</span>"
+    ]
+  },
+  {
+    "objectID": "content/category2/index.html#citations-and-references",
+    "href": "content/category2/index.html#citations-and-references",
+    "title": "Category 2 Content",
+    "section": "Citations and References",
+    "text": "Citations and References\nHere’s a sentence with a footnote1.",
+    "crumbs": [
+      "Advanced Topics",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Advanced Topics</span>"
+    ]
+  },
+  {
+    "objectID": "content/category2/index.html#definition-lists",
+    "href": "content/category2/index.html#definition-lists",
+    "title": "Category 2 Content",
+    "section": "Definition Lists",
+    "text": "Definition Lists\n\nTerm 1\n\nDefinition of the first term\n\n\nAdditional details about the first term\n\nTerm 2\n\nExplanation of the second term",
+    "crumbs": [
+      "Advanced Topics",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Advanced Topics</span>"
+    ]
+  },
+  {
+    "objectID": "content/category2/index.html#margin-content",
+    "href": "content/category2/index.html#margin-content",
+    "title": "Category 2 Content",
+    "section": "Margin Content",
+    "text": "Margin Content\nThis is the main text of the document.\n\n\nThis is supplementary content that appears in the margin in HTML output.",
+    "crumbs": [
+      "Advanced Topics",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Advanced Topics</span>"
+    ]
+  },
+  {
+    "objectID": "content/category2/index.html#special-formatting",
+    "href": "content/category2/index.html#special-formatting",
+    "title": "Category 2 Content",
+    "section": "Special Formatting",
+    "text": "Special Formatting\n\nBold text for emphasis\nItalic text for subtle emphasis\nMonospace text for technical terms\nStrikethrough for removed content\nLinks for references\n\n\nThis is a blockquote that can be used to highlight important quotes or excerpts from other sources.",
+    "crumbs": [
+      "Advanced Topics",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Advanced Topics</span>"
+    ]
+  },
+  {
+    "objectID": "content/category2/index.html#footnotes",
+    "href": "content/category2/index.html#footnotes",
+    "title": "Category 2 Content",
+    "section": "",
+    "text": "This is the footnote content explaining the reference.↩︎",
+    "crumbs": [
+      "Advanced Topics",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Advanced Topics</span>"
+    ]
+  },
+  {
+    "objectID": "content/category3/subcategory1/index.html",
+    "href": "content/category3/subcategory1/index.html",
+    "title": "Review and Feedback",
+    "section": "",
+    "text": "Review Process",
+    "crumbs": [
+      "Maintenance & Distribution",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Maintenance & Distribution</span>"
+    ]
+  },
+  {
+    "objectID": "content/category3/subcategory1/index.html#review-process",
+    "href": "content/category3/subcategory1/index.html#review-process",
+    "title": "Review and Feedback",
+    "section": "",
+    "text": "Types of Reviews\n\nContent Review\n\nAccuracy check\nCompleteness\nConsistency\n\nTechnical Review\n\nFactual accuracy\nTechnical correctness\nImplementation feasibility\n\nEditorial Review\n\nGrammar and style\nFlow and readability\nFormat consistency",
+    "crumbs": [
+      "Maintenance & Distribution",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Maintenance & Distribution</span>"
+    ]
+  },
+  {
+    "objectID": "content/category3/subcategory1/index.html#feedback-management",
+    "href": "content/category3/subcategory1/index.html#feedback-management",
+    "title": "Review and Feedback",
+    "section": "Feedback Management",
+    "text": "Feedback Management\n\nCollecting Feedback\n\n\n\n\n\n\nFeedback Guidelines\n\n\n\n\nBe specific\nProvide examples\nSuggest improvements\nStay constructive\n\n\n\n\n\nFeedback Categories\n\n\n\nType\nFocus\nReviewers\n\n\n\n\nTechnical\nAccuracy\nSubject experts\n\n\nEditorial\nStyle\nEditors\n\n\nUser\nUsability\nTarget audience",
+    "crumbs": [
+      "Maintenance & Distribution",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Maintenance & Distribution</span>"
+    ]
+  },
+  {
+    "objectID": "content/category3/subcategory1/index.html#implementation",
+    "href": "content/category3/subcategory1/index.html#implementation",
+    "title": "Review and Feedback",
+    "section": "Implementation",
+    "text": "Implementation\n\nPlanningExecutionFollow-up\n\n\n\nReview schedule\nReviewer selection\nTools and methods\n\n\n\n\nFeedback collection\nAnalysis\nPrioritization\n\n\n\n\nImplementation\nVerification\nDocumentation",
+    "crumbs": [
+      "Maintenance & Distribution",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Maintenance & Distribution</span>"
+    ]
+  },
+  {
+    "objectID": "content/category3/subcategory1/index.html#best-practices",
+    "href": "content/category3/subcategory1/index.html#best-practices",
+    "title": "Review and Feedback",
+    "section": "Best Practices",
+    "text": "Best Practices\n\nSet clear expectations\nUse structured forms\nTrack changes\nDocument decisions\n\n\n\n\n\nRegular reviews improve quality and maintain consistency.",
+    "crumbs": [
+      "Maintenance & Distribution",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Maintenance & Distribution</span>"
+    ]
+  },
+  {
+    "objectID": "content/category3/subcategory2/index.html",
+    "href": "content/category3/subcategory2/index.html",
+    "title": "Distribution and Maintenance",
+    "section": "",
+    "text": "Distribution Channels",
+    "crumbs": [
+      "Maintenance & Distribution",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Maintenance & Distribution</span>"
+    ]
+  },
+  {
+    "objectID": "content/category3/subcategory2/index.html#distribution-channels",
+    "href": "content/category3/subcategory2/index.html#distribution-channels",
+    "title": "Distribution and Maintenance",
+    "section": "",
+    "text": "Digital Distribution\n\nWeb Platforms\n\nDocumentation sites\nKnowledge bases\nLearning platforms\n\nFile Sharing\n\nCloud storage\nContent management systems\nVersion control systems",
+    "crumbs": [
+      "Maintenance & Distribution",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Maintenance & Distribution</span>"
+    ]
+  },
+  {
+    "objectID": "content/category3/subcategory2/index.html#maintenance-strategy",
+    "href": "content/category3/subcategory2/index.html#maintenance-strategy",
+    "title": "Distribution and Maintenance",
+    "section": "Maintenance Strategy",
+    "text": "Maintenance Strategy\n\nUpdate Cycle\n\n\n\n\n\n\nNote\n\n\n\nRegular updates ensure content stays relevant and accurate\n\n\n\n\n\nUpdate Type\nFrequency\nScope\n\n\n\n\nMinor\nMonthly\nTypos, small changes\n\n\nMajor\nQuarterly\nContent updates\n\n\nComplete\nYearly\nFull revision\n\n\n\n\n\nVersion Control\n\nTrackingManagementDocumentation\n\n\n\nVersion numbers\nChange logs\nRelease notes\n\n\n\n\nBranch strategy\nReview process\nMerge policies\n\n\n\n\nUpdate history\nMigration guides\nDeprecation notices",
+    "crumbs": [
+      "Maintenance & Distribution",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Maintenance & Distribution</span>"
+    ]
+  },
+  {
+    "objectID": "content/category3/subcategory2/index.html#quality-assurance",
+    "href": "content/category3/subcategory2/index.html#quality-assurance",
+    "title": "Distribution and Maintenance",
+    "section": "Quality Assurance",
+    "text": "Quality Assurance\n\nAutomated Checks\n\nLink validation\nFormat verification\nStyle compliance\nAccessibility tests\n\n\n\nManual Review\n\n\n\n\n\n\nReview Checklist\n\n\n\n\nContent accuracy\nFormat consistency\nLink functionality\nImage quality",
+    "crumbs": [
+      "Maintenance & Distribution",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Maintenance & Distribution</span>"
+    ]
+  },
+  {
+    "objectID": "content/category3/subcategory2/index.html#archival",
+    "href": "content/category3/subcategory2/index.html#archival",
+    "title": "Distribution and Maintenance",
+    "section": "Archival",
+    "text": "Archival\n\nProper archival ensures historical versions remain accessible when needed.\n\n\nArchive strategy\nStorage solutions\nRetrieval process\nRetention policy",
+    "crumbs": [
+      "Maintenance & Distribution",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Maintenance & Distribution</span>"
+    ]
+  }
+]
