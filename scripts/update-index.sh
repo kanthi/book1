@@ -159,6 +159,7 @@ format:
     toc: true
     number-sections: false
     page-navigation: true
+    cover-image: images/cover.pdf
 
   pdf:
     documentclass: scrreprt
@@ -166,12 +167,38 @@ format:
     number-sections: false
     colorlinks: true
     geometry:
-      - top=25mm
-      - left=25mm
-      - right=25mm
-      - bottom=25mm
+      - top=0mm
+      - left=0mm
+      - right=0mm
+      - bottom=0mm
+    include-in-header: 
+      text: |
+        \\usepackage{pdfpages}
+        \\usepackage{graphicx}
+    template-partials:
+      - "before-body.tex"
+EOL
+
+# Create the LaTeX template for the cover page
+cat > "before-body.tex" << EOL
+% Save the original page size
+\\newlength{\\originalpaperwidth}
+\\newlength{\\originalpaperheight}
+\\setlength{\\originalpaperwidth}{\\paperwidth}
+\\setlength{\\originalpaperheight}{\\paperheight}
+
+% Set page size to match the image
+\\includegraphics[width=\\paperwidth,height=\\paperheight,keepaspectratio=false]{images/cover.pdf}
+
+% Reset page geometry for content
+\\newgeometry{top=25mm,left=25mm,right=25mm,bottom=25mm}
+\\clearpage
+EOL
+
+cat >> "$TMP_FILE" << EOL
 
   epub:
+    cover-image: images/cover.pdf
     toc: true
     number-sections: false
 EOL

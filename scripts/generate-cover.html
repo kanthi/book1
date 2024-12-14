@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Book Cover</title>
+</head>
+<body>
+    <canvas id="bookCover" width="1600" height="2400" style="display: none;"></canvas>
+    <img id="output" style="max-width: 800px;">
+    <script>
+        const canvas = document.getElementById('bookCover');
+        const ctx = canvas.getContext('2d');
+        
+        // Set background
+        const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+        gradient.addColorStop(0, '#1a1f2e');
+        gradient.addColorStop(1, '#2d364d');
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // Add decorative elements
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
+        ctx.lineWidth = 2;
+        for(let i = 0; i < 20; i++) {
+            ctx.beginPath();
+            ctx.moveTo(0, i * 120);
+            ctx.lineTo(canvas.width, i * 120);
+            ctx.stroke();
+        }
+
+        // Add title
+        ctx.fillStyle = '#ffffff';
+        ctx.font = 'bold 120px Arial';
+        ctx.textAlign = 'center';
+        ctx.fillText('KINGsNOTES', canvas.width/2, canvas.height/2 - 100);
+
+        // Add subtitle
+        ctx.font = '60px Arial';
+        ctx.fillStyle = '#b4c6ef';
+        ctx.fillText('A Collection of Technical Notes', canvas.width/2, canvas.height/2 + 50);
+
+        // Add author
+        ctx.font = '80px Arial';
+        ctx.fillStyle = '#89ddff';
+        ctx.fillText('K19G', canvas.width/2, canvas.height/2 + 200);
+
+        // Display the result
+        const output = document.getElementById('output');
+        output.src = canvas.toDataURL('image/jpeg', 0.9);
+    </script>
+    <div style="margin-top: 20px;">
+        Right-click the image above and select "Save Image As..." to save as cover.jpg in the images directory.
+    </div>
+</body>
+</html>

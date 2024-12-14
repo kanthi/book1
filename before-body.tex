@@ -1,0 +1,12 @@
+% Save the original page size
+\newlength{\originalpaperwidth}
+\newlength{\originalpaperheight}
+\setlength{\originalpaperwidth}{\paperwidth}
+\setlength{\originalpaperheight}{\paperheight}
+
+% Set page size to match the image
+\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio=false]{images/cover.pdf}
+
+% Reset page geometry for content
+\newgeometry{top=25mm,left=25mm,right=25mm,bottom=25mm}
+\clearpage
