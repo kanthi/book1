@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Document Planning – KINGsNOTES</title>
+<title>Unit Testing Best Practices – KINGsNOTES</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -29,8 +63,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../content/category2/index.html" rel="next">
-<link href="../../../content/category1/subcategory3/index.html" rel="prev">
+<link href="../../../content/testing/integration-testing/index.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -117,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Category1</li><li class="breadcrumb-item"><a href="../../../content/category1/subcategory4/index.html">subcategory4</a></li><li class="breadcrumb-item"><a href="../../../content/category1/subcategory4/index.html"><span class="chapter-title">Document Planning</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../content/testing/index.html">Testing</a></li><li class="breadcrumb-item"><a href="../../../content/testing/unit-testing/index.html">unit-testing</a></li><li class="breadcrumb-item"><a href="../../../content/testing/unit-testing/index.html"><span class="chapter-title">Unit Testing Best Practices</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -351,13 +384,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false">
  <span class="menu-text">Category1</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false">
@@ -408,16 +441,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false">
  <span class="menu-text">subcategory4</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/category1/subcategory4/index.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Document Planning</span></a>
+  <a href="../../../content/category1/subcategory4/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Document Planning</span></a>
   </div>
 </li>
       </ul>
@@ -517,13 +550,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="true">
  <span class="menu-text">Testing</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-23" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-23" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../content/testing/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Software Testing Overview</span></a>
@@ -605,16 +638,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-28" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-28" role="navigation" aria-expanded="true">
  <span class="menu-text">unit-testing</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-28" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-28" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-28" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-28" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/testing/unit-testing/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Unit Testing Best Practices</span></a>
+  <a href="../../../content/testing/unit-testing/index.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Unit Testing Best Practices</span></a>
   </div>
 </li>
       </ul>
@@ -631,27 +664,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#content-strategy" id="toc-content-strategy" class="nav-link active" data-scroll-target="#content-strategy">Content Strategy</a>
-  <ul class="collapse">
-  <li><a href="#audience-analysis" id="toc-audience-analysis" class="nav-link" data-scroll-target="#audience-analysis">Audience Analysis</a></li>
-  <li><a href="#content-organization" id="toc-content-organization" class="nav-link" data-scroll-target="#content-organization">Content Organization</a></li>
-  </ul></li>
-  <li><a href="#research-methods" id="toc-research-methods" class="nav-link" data-scroll-target="#research-methods">Research Methods</a>
-  <ul class="collapse">
-  <li><a href="#primary-sources" id="toc-primary-sources" class="nav-link" data-scroll-target="#primary-sources">Primary Sources</a></li>
-  <li><a href="#secondary-sources" id="toc-secondary-sources" class="nav-link" data-scroll-target="#secondary-sources">Secondary Sources</a></li>
-  </ul></li>
-  <li><a href="#timeline-planning" id="toc-timeline-planning" class="nav-link" data-scroll-target="#timeline-planning">Timeline Planning</a></li>
-  <li><a href="#quality-metrics" id="toc-quality-metrics" class="nav-link" data-scroll-target="#quality-metrics">Quality Metrics</a></li>
+  <li><a href="#what-is-unit-testing" id="toc-what-is-unit-testing" class="nav-link active" data-scroll-target="#what-is-unit-testing">What is Unit Testing?</a></li>
+  <li><a href="#writing-good-unit-tests" id="toc-writing-good-unit-tests" class="nav-link" data-scroll-target="#writing-good-unit-tests">Writing Good Unit Tests</a></li>
+  <li><a href="#example-test-case" id="toc-example-test-case" class="nav-link" data-scroll-target="#example-test-case">Example Test Case</a></li>
+  <li><a href="#common-pitfalls" id="toc-common-pitfalls" class="nav-link" data-scroll-target="#common-pitfalls">Common Pitfalls</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Category1</li><li class="breadcrumb-item"><a href="../../../content/category1/subcategory4/index.html">subcategory4</a></li><li class="breadcrumb-item"><a href="../../../content/category1/subcategory4/index.html"><span class="chapter-title">Document Planning</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../content/testing/index.html">Testing</a></li><li class="breadcrumb-item"><a href="../../../content/testing/unit-testing/index.html">unit-testing</a></li><li class="breadcrumb-item"><a href="../../../content/testing/unit-testing/index.html"><span class="chapter-title">Unit Testing Best Practices</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Document Planning</span></h1>
+<h1 class="title"><span class="chapter-title">Unit Testing Best Practices</span></h1>
 </div>
 
 
@@ -668,120 +693,54 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="content-strategy" class="level2">
-<h2 class="anchored" data-anchor-id="content-strategy">Content Strategy</h2>
-<section id="audience-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="audience-analysis">Audience Analysis</h3>
-<p>Before writing, consider your audience:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Aspect</th>
-<th>Technical Audience</th>
-<th>General Audience</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Language</td>
-<td>Technical terms</td>
-<td>Simple explanations</td>
-</tr>
-<tr class="even">
-<td>Detail Level</td>
-<td>In-depth</td>
-<td>Overview</td>
-</tr>
-<tr class="odd">
-<td>Examples</td>
-<td>Code/Technical</td>
-<td>Real-world</td>
-</tr>
-<tr class="even">
-<td>Assumptions</td>
-<td>Domain knowledge</td>
-<td>Basic understanding</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="content-organization" class="level3">
-<h3 class="anchored" data-anchor-id="content-organization">Content Organization</h3>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Good organization is key to effective documentation</p>
-</div>
-</div>
+<p>Unit testing is the foundation of a solid testing strategy. This chapter covers essential unit testing concepts and practices.</p>
+<section id="what-is-unit-testing" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-unit-testing">What is Unit Testing?</h2>
+<p>Unit testing involves testing individual components or functions in isolation. A unit test typically follows this pattern:</p>
 <ol type="1">
-<li>Start with an outline</li>
-<li>Group related topics</li>
-<li>Create logical flow</li>
-<li>Review and adjust</li>
+<li>Arrange - Set up the test conditions</li>
+<li>Act - Execute the code being tested</li>
+<li>Assert - Verify the results</li>
 </ol>
 </section>
-</section>
-<section id="research-methods" class="level2">
-<h2 class="anchored" data-anchor-id="research-methods">Research Methods</h2>
-<section id="primary-sources" class="level3">
-<h3 class="anchored" data-anchor-id="primary-sources">Primary Sources</h3>
+<section id="writing-good-unit-tests" class="level2">
+<h2 class="anchored" data-anchor-id="writing-good-unit-tests">Writing Good Unit Tests</h2>
+<p>Here are some key principles:</p>
 <ul>
-<li>Direct observations</li>
-<li>Original research</li>
-<li>First-hand accounts</li>
+<li>Test one thing at a time</li>
+<li>Use descriptive test names</li>
+<li>Follow the FIRST principles:
+<ul>
+<li>Fast</li>
+<li>Independent</li>
+<li>Repeatable</li>
+<li>Self-validating</li>
+<li>Timely</li>
+</ul></li>
 </ul>
 </section>
-<section id="secondary-sources" class="level3">
-<h3 class="anchored" data-anchor-id="secondary-sources">Secondary Sources</h3>
-<ul>
-<li>Literature reviews</li>
-<li>Expert analyses</li>
-<li>Case studies</li>
-</ul>
+<section id="example-test-case" class="level2">
+<h2 class="anchored" data-anchor-id="example-test-case">Example Test Case</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> test_add_numbers():</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Arrange</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    a <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    b <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    expected <span class="op">=</span> <span class="dv">8</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Act</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> add_numbers(a, b)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Assert</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> result <span class="op">==</span> expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-</section>
-<section id="timeline-planning" class="level2">
-<h2 class="anchored" data-anchor-id="timeline-planning">Timeline Planning</h2>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Phase 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Phase 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Phase 3</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<section id="common-pitfalls" class="level2">
+<h2 class="anchored" data-anchor-id="common-pitfalls">Common Pitfalls</h2>
 <ul>
-<li>Initial research</li>
-<li>Outline creation</li>
-<li>Stakeholder review</li>
+<li>Testing implementation details</li>
+<li>Brittle tests</li>
+<li>Poor test isolation</li>
+<li>Missing edge cases</li>
 </ul>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<ul>
-<li>Content development</li>
-<li>Technical review</li>
-<li>Revisions</li>
-</ul>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<ul>
-<li>Final editing</li>
-<li>Publication</li>
-<li>Distribution</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="quality-metrics" class="level2">
-<h2 class="anchored" data-anchor-id="quality-metrics">Quality Metrics</h2>
-<blockquote class="blockquote">
-<p>“Measure twice, cut once” applies to documentation too.</p>
-</blockquote>
-<p>Quality checkpoints: 1. Technical accuracy 2. Completeness 3. Clarity 4. Consistency 5. Accessibility</p>
 
 
 </section>
@@ -1350,14 +1309,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../content/category1/subcategory3/index.html" class="pagination-link" aria-label="Writing Best Practices">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Writing Best Practices</span></span>
+      <a href="../../../content/testing/integration-testing/index.html" class="pagination-link" aria-label="Integration Testing Strategies">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Integration Testing Strategies</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../content/category2/index.html" class="pagination-link" aria-label="Category 2 Content">
-        <span class="nav-page-text"><span class="chapter-title">Category 2 Content</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

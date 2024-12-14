@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Document Planning – KINGsNOTES</title>
+<title>vmstat – KINGsNOTES</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -29,8 +63,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../content/category2/index.html" rel="next">
-<link href="../../../content/category1/subcategory3/index.html" rel="prev">
+<link href="../../../content/01-Networking/01_TCPIP/01_introduction.html" rel="next">
+<link href="../../../content/01-Commands/04_Monitoring/02_iostat1.html" rel="prev">
 <script src="../../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -117,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Category1</li><li class="breadcrumb-item"><a href="../../../content/category1/subcategory4/index.html">subcategory4</a></li><li class="breadcrumb-item"><a href="../../../content/category1/subcategory4/index.html"><span class="chapter-title">Document Planning</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Commands</li><li class="breadcrumb-item"><a href="../../../content/01-Commands/04_Monitoring/01_iostat.html">04_Monitoring</a></li><li class="breadcrumb-item"><a href="../../../content/01-Commands/04_Monitoring/03_vmstat.html"><span class="chapter-title">vmstat</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -137,13 +171,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Commands</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
@@ -244,13 +278,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
  <span class="menu-text">04_Monitoring</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../content/01-Commands/04_Monitoring/01_iostat.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">iostat</span></a>
@@ -263,7 +297,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/01-Commands/04_Monitoring/03_vmstat.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">vmstat</span></a>
+  <a href="../../../content/01-Commands/04_Monitoring/03_vmstat.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">vmstat</span></a>
   </div>
 </li>
       </ul>
@@ -351,13 +385,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false">
  <span class="menu-text">Category1</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false">
@@ -408,16 +442,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false">
  <span class="menu-text">subcategory4</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/category1/subcategory4/index.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Document Planning</span></a>
+  <a href="../../../content/category1/subcategory4/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Document Planning</span></a>
   </div>
 </li>
       </ul>
@@ -631,27 +665,35 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#content-strategy" id="toc-content-strategy" class="nav-link active" data-scroll-target="#content-strategy">Content Strategy</a>
+  <li><a href="#basic-syntax" id="toc-basic-syntax" class="nav-link active" data-scroll-target="#basic-syntax">Basic Syntax</a></li>
+  <li><a href="#common-options" id="toc-common-options" class="nav-link" data-scroll-target="#common-options">Common Options</a></li>
+  <li><a href="#example-output" id="toc-example-output" class="nav-link" data-scroll-target="#example-output">Example Output</a></li>
+  <li><a href="#field-descriptions" id="toc-field-descriptions" class="nav-link" data-scroll-target="#field-descriptions">Field Descriptions</a>
   <ul class="collapse">
-  <li><a href="#audience-analysis" id="toc-audience-analysis" class="nav-link" data-scroll-target="#audience-analysis">Audience Analysis</a></li>
-  <li><a href="#content-organization" id="toc-content-organization" class="nav-link" data-scroll-target="#content-organization">Content Organization</a></li>
+  <li><a href="#procs" id="toc-procs" class="nav-link" data-scroll-target="#procs">Procs</a></li>
+  <li><a href="#memory" id="toc-memory" class="nav-link" data-scroll-target="#memory">Memory</a></li>
+  <li><a href="#swap" id="toc-swap" class="nav-link" data-scroll-target="#swap">Swap</a></li>
+  <li><a href="#io" id="toc-io" class="nav-link" data-scroll-target="#io">IO</a></li>
+  <li><a href="#system" id="toc-system" class="nav-link" data-scroll-target="#system">System</a></li>
+  <li><a href="#cpu" id="toc-cpu" class="nav-link" data-scroll-target="#cpu">CPU</a></li>
   </ul></li>
-  <li><a href="#research-methods" id="toc-research-methods" class="nav-link" data-scroll-target="#research-methods">Research Methods</a>
+  <li><a href="#example-with-delay" id="toc-example-with-delay" class="nav-link" data-scroll-target="#example-with-delay">Example with Delay</a></li>
+  <li><a href="#additional-examples" id="toc-additional-examples" class="nav-link" data-scroll-target="#additional-examples">Additional Examples</a>
   <ul class="collapse">
-  <li><a href="#primary-sources" id="toc-primary-sources" class="nav-link" data-scroll-target="#primary-sources">Primary Sources</a></li>
-  <li><a href="#secondary-sources" id="toc-secondary-sources" class="nav-link" data-scroll-target="#secondary-sources">Secondary Sources</a></li>
+  <li><a href="#display-activeinactive-memory" id="toc-display-activeinactive-memory" class="nav-link" data-scroll-target="#display-activeinactive-memory">Display Active/Inactive Memory</a></li>
+  <li><a href="#show-memory-statistics" id="toc-show-memory-statistics" class="nav-link" data-scroll-target="#show-memory-statistics">Show Memory Statistics</a></li>
+  <li><a href="#display-disk-statistics" id="toc-display-disk-statistics" class="nav-link" data-scroll-target="#display-disk-statistics">Display Disk Statistics</a></li>
+  <li><a href="#show-fork-statistics" id="toc-show-fork-statistics" class="nav-link" data-scroll-target="#show-fork-statistics">Show Fork Statistics</a></li>
   </ul></li>
-  <li><a href="#timeline-planning" id="toc-timeline-planning" class="nav-link" data-scroll-target="#timeline-planning">Timeline Planning</a></li>
-  <li><a href="#quality-metrics" id="toc-quality-metrics" class="nav-link" data-scroll-target="#quality-metrics">Quality Metrics</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Category1</li><li class="breadcrumb-item"><a href="../../../content/category1/subcategory4/index.html">subcategory4</a></li><li class="breadcrumb-item"><a href="../../../content/category1/subcategory4/index.html"><span class="chapter-title">Document Planning</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Commands</li><li class="breadcrumb-item"><a href="../../../content/01-Commands/04_Monitoring/01_iostat.html">04_Monitoring</a></li><li class="breadcrumb-item"><a href="../../../content/01-Commands/04_Monitoring/03_vmstat.html"><span class="chapter-title">vmstat</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Document Planning</span></h1>
+<h1 class="title"><span class="chapter-title">vmstat</span></h1>
 </div>
 
 
@@ -668,122 +710,126 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="content-strategy" class="level2">
-<h2 class="anchored" data-anchor-id="content-strategy">Content Strategy</h2>
-<section id="audience-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="audience-analysis">Audience Analysis</h3>
-<p>Before writing, consider your audience:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Aspect</th>
-<th>Technical Audience</th>
-<th>General Audience</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Language</td>
-<td>Technical terms</td>
-<td>Simple explanations</td>
-</tr>
-<tr class="even">
-<td>Detail Level</td>
-<td>In-depth</td>
-<td>Overview</td>
-</tr>
-<tr class="odd">
-<td>Examples</td>
-<td>Code/Technical</td>
-<td>Real-world</td>
-</tr>
-<tr class="even">
-<td>Assumptions</td>
-<td>Domain knowledge</td>
-<td>Basic understanding</td>
-</tr>
-</tbody>
-</table>
+<p><code>vmstat</code> (Virtual Memory Statistics) is a powerful Linux command that provides information about system processes, memory, paging, block IO, traps, and CPU activity.</p>
+<section id="basic-syntax" class="level2">
+<h2 class="anchored" data-anchor-id="basic-syntax">Basic Syntax</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vmstat</span> <span class="pp">[</span><span class="ss">options</span><span class="pp">]</span> [delay <span class="pp">[</span><span class="ss">count</span><span class="pp">]</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="content-organization" class="level3">
-<h3 class="anchored" data-anchor-id="content-organization">Content Organization</h3>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Good organization is key to effective documentation</p>
-</div>
-</div>
-<ol type="1">
-<li>Start with an outline</li>
-<li>Group related topics</li>
-<li>Create logical flow</li>
-<li>Review and adjust</li>
-</ol>
-</section>
-</section>
-<section id="research-methods" class="level2">
-<h2 class="anchored" data-anchor-id="research-methods">Research Methods</h2>
-<section id="primary-sources" class="level3">
-<h3 class="anchored" data-anchor-id="primary-sources">Primary Sources</h3>
+<section id="common-options" class="level2">
+<h2 class="anchored" data-anchor-id="common-options">Common Options</h2>
 <ul>
-<li>Direct observations</li>
-<li>Original research</li>
-<li>First-hand accounts</li>
+<li><code>-a</code> : Display active and inactive memory</li>
+<li><code>-f</code> : Display the number of forks since boot</li>
+<li><code>-m</code> : Display memory information in MB rather than KB</li>
+<li><code>-n</code> : Display header only once</li>
+<li><code>-s</code> : Display memory statistics</li>
+<li><code>-d</code> : Display disk statistics</li>
 </ul>
 </section>
-<section id="secondary-sources" class="level3">
-<h3 class="anchored" data-anchor-id="secondary-sources">Secondary Sources</h3>
+<section id="example-output" class="level2">
+<h2 class="anchored" data-anchor-id="example-output">Example Output</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> vmstat</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">procs</span> <span class="at">-----------memory----------</span> <span class="at">---swap--</span> <span class="at">-----io----</span> <span class="at">-system--</span> <span class="at">------cpu-----</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a> <span class="ex">r</span>  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a> <span class="ex">1</span>  0      0 823012  66268 460644    0    0     1     1    1    2  1  0 98  0  0</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="field-descriptions" class="level2">
+<h2 class="anchored" data-anchor-id="field-descriptions">Field Descriptions</h2>
+<section id="procs" class="level3">
+<h3 class="anchored" data-anchor-id="procs">Procs</h3>
 <ul>
-<li>Literature reviews</li>
-<li>Expert analyses</li>
-<li>Case studies</li>
+<li><code>r</code>: Number of processes waiting for runtime</li>
+<li><code>b</code>: Number of processes in uninterruptible sleep</li>
+</ul>
+</section>
+<section id="memory" class="level3">
+<h3 class="anchored" data-anchor-id="memory">Memory</h3>
+<ul>
+<li><code>swpd</code>: Used virtual memory</li>
+<li><code>free</code>: Idle memory</li>
+<li><code>buff</code>: Memory used as buffers</li>
+<li><code>cache</code>: Memory used as cache</li>
+</ul>
+</section>
+<section id="swap" class="level3">
+<h3 class="anchored" data-anchor-id="swap">Swap</h3>
+<ul>
+<li><code>si</code>: Memory swapped from disk</li>
+<li><code>so</code>: Memory swapped to disk</li>
+</ul>
+</section>
+<section id="io" class="level3">
+<h3 class="anchored" data-anchor-id="io">IO</h3>
+<ul>
+<li><code>bi</code>: Blocks received from block device</li>
+<li><code>bo</code>: Blocks sent to block device</li>
+</ul>
+</section>
+<section id="system" class="level3">
+<h3 class="anchored" data-anchor-id="system">System</h3>
+<ul>
+<li><code>in</code>: Number of interrupts per second</li>
+<li><code>cs</code>: Number of context switches per second</li>
+</ul>
+</section>
+<section id="cpu" class="level3">
+<h3 class="anchored" data-anchor-id="cpu">CPU</h3>
+<ul>
+<li><code>us</code>: Time spent in user code</li>
+<li><code>sy</code>: Time spent in system code</li>
+<li><code>id</code>: Time spent idle</li>
+<li><code>wa</code>: Time spent waiting for IO</li>
+<li><code>st</code>: Time stolen from a virtual machine</li>
 </ul>
 </section>
 </section>
-<section id="timeline-planning" class="level2">
-<h2 class="anchored" data-anchor-id="timeline-planning">Timeline Planning</h2>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Phase 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Phase 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Phase 3</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<ul>
-<li>Initial research</li>
-<li>Outline creation</li>
-<li>Stakeholder review</li>
-</ul>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<ul>
-<li>Content development</li>
-<li>Technical review</li>
-<li>Revisions</li>
-</ul>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<ul>
-<li>Final editing</li>
-<li>Publication</li>
-<li>Distribution</li>
-</ul>
-</div>
-</div>
-</div>
+<section id="example-with-delay" class="level2">
+<h2 class="anchored" data-anchor-id="example-with-delay">Example with Delay</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> vmstat 2 5  <span class="co"># Display stats every 2 seconds, 5 times</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">procs</span> <span class="at">-----------memory----------</span> <span class="at">---swap--</span> <span class="at">-----io----</span> <span class="at">-system--</span> <span class="at">------cpu-----</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a> <span class="ex">r</span>  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a> <span class="ex">1</span>  0      0 823012  66268 460644    0    0     1     1    1    2  1  0 98  0  0</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a> <span class="ex">0</span>  0      0 823012  66268 460644    0    0     0     0   88  156  1  0 99  0  0</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a> <span class="ex">0</span>  0      0 823012  66268 460644    0    0     0     0   85  152  0  0 100 0  0</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a> <span class="ex">0</span>  0      0 823012  66268 460644    0    0     0     0   86  154  0  0 100 0  0</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a> <span class="ex">0</span>  0      0 823012  66268 460644    0    0     0     0   84  150  0  0 100 0  0</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="quality-metrics" class="level2">
-<h2 class="anchored" data-anchor-id="quality-metrics">Quality Metrics</h2>
-<blockquote class="blockquote">
-<p>“Measure twice, cut once” applies to documentation too.</p>
-</blockquote>
-<p>Quality checkpoints: 1. Technical accuracy 2. Completeness 3. Clarity 4. Consistency 5. Accessibility</p>
+<section id="additional-examples" class="level2">
+<h2 class="anchored" data-anchor-id="additional-examples">Additional Examples</h2>
+<section id="display-activeinactive-memory" class="level3">
+<h3 class="anchored" data-anchor-id="display-activeinactive-memory">Display Active/Inactive Memory</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> vmstat <span class="at">-a</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">procs</span> <span class="at">-----------memory----------</span> <span class="at">---swap--</span> <span class="at">-----io----</span> <span class="at">-system--</span> <span class="at">------cpu-----</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a> <span class="ex">r</span>  b   swpd   free  inact active   si   so    bi    bo   in   cs us sy id wa st</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a> <span class="ex">1</span>  0      0 823012 264888 460644    0    0     1     1    1    2  1  0 98  0  0</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="show-memory-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="show-memory-statistics">Show Memory Statistics</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> vmstat <span class="at">-s</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>      <span class="ex">2048000</span> K total memory</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>       <span class="ex">823012</span> K used memory</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>       <span class="ex">660644</span> K active memory</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>       <span class="ex">264888</span> K inactive memory</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>        <span class="ex">66268</span> K free memory</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>            <span class="ex">0</span> K buffer memory</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>       <span class="ex">458756</span> K swap cache</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="display-disk-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="display-disk-statistics">Display Disk Statistics</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> vmstat <span class="at">-d</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">disk-</span> <span class="at">------------reads------------</span> <span class="at">------------writes-----------</span> <span class="at">-----IO------</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>       <span class="ex">total</span> merged sectors      ms  total merged sectors      ms    cur    sec</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="ex">sda</span>    40307   2109  714418    8564   23012   14028  298010   22534   0      42</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="ex">sdb</span>    35292   1819  684290    7845   21320   13822  287999   20145   0      38</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="show-fork-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="show-fork-statistics">Show Fork Statistics</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> vmstat <span class="at">-f</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>     <span class="ex">386281</span> forks</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This command is particularly useful for: - System performance monitoring - Troubleshooting memory issues - Identifying system bottlenecks - Real-time system statistics</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1350,13 +1396,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../content/category1/subcategory3/index.html" class="pagination-link" aria-label="Writing Best Practices">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Writing Best Practices</span></span>
+      <a href="../../../content/01-Commands/04_Monitoring/02_iostat1.html" class="pagination-link" aria-label="iostat zed">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">iostat zed</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../content/category2/index.html" class="pagination-link" aria-label="Category 2 Content">
-        <span class="nav-page-text"><span class="chapter-title">Category 2 Content</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../content/01-Networking/01_TCPIP/01_introduction.html" class="pagination-link" aria-label="Intro">
+        <span class="nav-page-text"><span class="chapter-title">Intro</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
