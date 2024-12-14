@@ -1,0 +1,61 @@
+---
+title: "ps"
+---
+
+## Overview
+
+The `ps` command provides information about active processes. Essential for system monitoring and troubleshooting.
+
+## Syntax
+
+```bash
+ps [options]
+```
+
+## Common Options
+
+- `-e`: Show all processes
+- `-f`: Full format listing
+- `-u username`: Show user's processes
+- `-aux`: BSD style listing
+- `--sort`: Sort by criteria
+
+## Examples
+
+```bash
+# Show all processes (BSD style)
+ps aux
+
+# Show process tree
+ps -ejH
+
+# Show specific user's processes
+ps -u username
+
+# Sort by memory usage
+ps aux --sort=-%mem
+
+# Sort by CPU usage
+ps aux --sort=-%cpu
+
+# Show process threads
+ps -eLf
+```
+
+## Output Fields
+
+- `PID`: Process ID
+- `TTY`: Terminal type
+- `TIME`: CPU time
+- `CMD`: Command name
+- `%CPU`: CPU usage
+- `%MEM`: Memory usage
+- `VSZ`: Virtual memory size
+- `RSS`: Resident set size
+
+## Tips
+
+1. Combine with `grep` to find specific processes
+2. Use `top` for real-time updates
+3. Check both CPU and memory usage
+4. Look for zombie processes

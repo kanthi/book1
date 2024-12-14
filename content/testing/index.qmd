@@ -1,0 +1,23 @@
+# Software Testing Overview
+
+This chapter introduces fundamental concepts in software testing and quality assurance.
+
+## Why Testing Matters
+
+Testing is a crucial part of software development that helps ensure:
+
+1. Reliability
+2. Performance
+3. Security
+4. User satisfaction
+
+## Types of Testing
+
+We'll cover various testing approaches:
+
+- Unit Testing
+- Integration Testing
+- System Testing
+- Performance Testing
+
+Choose the right testing strategy based on your project needs.

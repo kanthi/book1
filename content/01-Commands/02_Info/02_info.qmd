@@ -1,0 +1,50 @@
+---
+title: "info"
+---
+
+## Overview
+
+The `info` command provides comprehensive documentation with a more structured format than man pages. It supports hyperlinks and a menu-based navigation system.
+
+## Syntax
+
+```bash
+info [options] [command_name]
+```
+
+## Common Options
+
+- `--help`: Display help information
+- `--version`: Show version information
+- `-f FILE`: Specify the Info file to read
+- `-n NODE`: Specify the node to view
+
+## Navigation
+
+- `n`: Next node
+- `p`: Previous node
+- `u`: Up one level
+- `l`: Last node viewed
+- `d`: Return to directory level
+- `h`: Show help
+- `q`: Quit
+
+## Examples
+
+```bash
+# View info documentation
+info ls
+
+# Go to specific node
+info -n 'Copy/Paste' emacs
+
+# View info directory
+info dir
+```
+
+## Tips
+
+1. Use `h` to learn navigation commands
+2. The menu structure makes finding information easier
+3. Info pages often contain more detailed information than man pages
+4. Use TAB to move between links

@@ -1,0 +1,43 @@
+---
+title: "apropos"
+---
+
+## Overview
+
+The `apropos` command searches the manual page names and descriptions for a specific keyword. It's useful for finding commands when you don't remember their exact names.
+
+## Syntax
+
+```bash
+apropos [options] keyword
+```
+
+## Common Options
+
+- `-a`: Display only matches that satisfy all keywords
+- `-r`: Use regular expressions for searching
+- `-s sections`: Look only in given manual sections
+- `-l`: List only page names
+
+## Examples
+
+```bash
+# Find commands related to passwords
+apropos password
+# Shows all commands with "password" in their description
+
+# Search with multiple keywords
+apropos -a user password
+# Shows commands containing both "user" and "password"
+
+# Use regex pattern
+apropos -r '^find.*'
+# Lists all commands starting with "find"
+```
+
+## Tips
+
+1. Use when you can't remember the exact command name
+2. Combine with `man` to read full documentation
+3. More detailed than `whatis`
+4. Great for discovering new commands

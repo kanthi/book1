@@ -1,0 +1,402 @@
+# Code Examples Across Languages
+
+This chapter showcases code examples from various programming languages, demonstrating syntax highlighting and formatting.
+
+## Fibonacci Sequence
+
+Here's how to implement the Fibonacci sequence in different languages:
+
+### Python
+```python
+def fibonacci(n: int) -> list[int]:
+    if n <= 0:
+        return []
+    elif n == 1:
+        return [0]
+    
+    fib = [0, 1]
+    for i in range(2, n):
+        fib.append(fib[i-1] + fib[i-2])
+    return fib
+
+# Example usage with type hints
+result: list[int] = fibonacci(10)
+print(f"First 10 Fibonacci numbers: {result}")
+```
+
+### Go
+```go
+package main
+
+import "fmt"
+
+func fibonacci(n int) []int {
+    if n <= 0 {
+        return []int{}
+    }
+    
+    fib := make([]int, n)
+    if n > 0 {
+        fib[0] = 0
+    }
+    if n > 1 {
+        fib[1] = 1
+    }
+    
+    for i := 2; i < n; i++ {
+        fib[i] = fib[i-1] + fib[i-2]
+    }
+    
+    return fib
+}
+
+func main() {
+    result := fibonacci(10)
+    fmt.Printf("First 10 Fibonacci numbers: %v\n", result)
+}
+```
+
+### Rust
+```rust
+fn fibonacci(n: usize) -> Vec<u64> {
+    if n == 0 {
+        return vec![];
+    }
+    
+    let mut fib = Vec::with_capacity(n);
+    fib.push(0);
+    
+    if n > 1 {
+        fib.push(1);
+        for i in 2..n {
+            let next = fib[i-1] + fib[i-2];
+            fib.push(next);
+        }
+    }
+    
+    fib
+}
+
+fn main() {
+    let result = fibonacci(10);
+    println!("First 10 Fibonacci numbers: {:?}", result);
+}
+```
+
+### Zig
+```zig
+const std = @import("std");
+
+fn fibonacci(n: usize, allocator: std.mem.Allocator) ![]u64 {
+    if (n == 0) return &[_]u64{};
+    
+    var fib = try allocator.alloc(u64, n);
+    fib[0] = 0;
+    
+    if (n > 1) {
+        fib[1] = 1;
+        var i: usize = 2;
+        while (i < n) : (i += 1) {
+            fib[i] = fib[i-1] + fib[i-2];
+        }
+    }
+    
+    return fib;
+}
+
+pub fn main() !void {
+    var gpa = std.heap.GeneralPurposeAllocator(.{}){};
+    defer _ = gpa.deinit();
+    const allocator = gpa.allocator();
+    
+    const n = 10;
+    const result = try fibonacci(n, allocator);
+    defer allocator.free(result);
+    
+    std.debug.print("First {d} Fibonacci numbers: {any}\n", .{ n, result });
+}
+```
+
+### Odin
+```odin
+package main
+
+import "core:fmt"
+
+fibonacci :: proc(n: int) -> []int {
+    if n <= 0 {
+        return []int{}
+    }
+    
+    fib := make([]int, n)
+    defer delete(fib)
+    
+    if n > 0 {
+        fib[0] = 0
+    }
+    if n > 1 {
+        fib[1] = 1
+    }
+    
+    for i := 2; i < n; i += 1 {
+        fib[i] = fib[i-1] + fib[i-2]
+    }
+    
+    return fib
+}
+
+main :: proc() {
+    result := fibonacci(10)
+    fmt.printf("First 10 Fibonacci numbers: %v\n", result)
+}
+```
+
+## Error Handling Examples
+
+Here's how different languages handle errors:
+
+### Rust Error Handling
+```rust
+use std::fs::File;
+use std::io::{self, Read};
+use std::path::Path;
+
+fn read_file_contents(path: &Path) -> Result<String, io::Error> {
+    let mut file = File::open(path)?;
+    let mut contents = String::new();
+    file.read_to_string(&mut contents)?;
+    Ok(contents)
+}
+
+fn process_file() -> Result<(), io::Error> {
+    let path = Path::new("example.txt");
+    let contents = read_file_contents(path)?;
+    println!("File contents: {}", contents);
+    Ok(())
+}
+```
+
+### Go Error Handling
+```go
+package main
+
+import (
+    "fmt"
+    "io/ioutil"
+    "os"
+)
+
+func readFileContents(path string) (string, error) {
+    data, err := ioutil.ReadFile(path)
+    if err != nil {
+        return "", fmt.Errorf("reading file: %w", err)
+    }
+    return string(data), nil
+}
+
+func processFile() error {
+    contents, err := readFileContents("example.txt")
+    if err != nil {
+        return fmt.Errorf("processing file: %w", err)
+    }
+    fmt.Printf("File contents: %s\n", contents)
+    return nil
+}
+```
+
+### Zig Error Handling
+```zig
+const std = @import("std");
+const fs = std.fs;
+
+fn readFileContents(path: []const u8, allocator: std.mem.Allocator) ![]u8 {
+    const file = try fs.cwd().openFile(path, .{});
+    defer file.close();
+    
+    return try file.readToEndAlloc(allocator, std.math.maxInt(usize));
+}
+
+fn processFile() !void {
+    var gpa = std.heap.GeneralPurposeAllocator(.{}){};
+    defer _ = gpa.deinit();
+    const allocator = gpa.allocator();
+    
+    const contents = try readFileContents("example.txt", allocator);
+    defer allocator.free(contents);
+    
+    std.debug.print("File contents: {s}\n", .{contents});
+}
+```
+
+## Memory Management Examples
+
+### Rust Memory Management
+```rust
+struct Buffer {
+    data: Vec<u8>,
+}
+
+impl Buffer {
+    fn new(size: usize) -> Self {
+        Buffer {
+            data: vec![0; size],
+        }
+    }
+    
+    fn process(&mut self) {
+        // Data is automatically cleaned up when Buffer is dropped
+        for i in 0..self.data.len() {
+            self.data[i] = (i % 256) as u8;
+        }
+    }
+}
+
+fn main() {
+    let mut buf = Buffer::new(1024);
+    buf.process();
+    // Buffer is automatically freed here
+}
+```
+
+### Zig Memory Management
+```zig
+const std = @import("std");
+
+const Buffer = struct {
+    data: []u8,
+    allocator: std.mem.Allocator,
+    
+    pub fn init(size: usize, allocator: std.mem.Allocator) !Buffer {
+        const data = try allocator.alloc(u8, size);
+        return Buffer{ .data = data, .allocator = allocator };
+    }
+    
+    pub fn deinit(self: *Buffer) void {
+        self.allocator.free(self.data);
+    }
+    
+    pub fn process(self: *Buffer) void {
+        for (self.data, 0..) |*byte, i| {
+            byte.* = @intCast(u8, i % 256);
+        }
+    }
+};
+
+pub fn main() !void {
+    var gpa = std.heap.GeneralPurposeAllocator(.{}){};
+    defer _ = gpa.deinit();
+    const allocator = gpa.allocator();
+    
+    var buf = try Buffer.init(1024, allocator);
+    defer buf.deinit();
+    
+    buf.process();
+}
+```
+
+## Concurrency Examples
+
+### Go Concurrency
+```go
+package main
+
+import (
+    "fmt"
+    "sync"
+    "time"
+)
+
+func worker(id int, jobs <-chan int, results chan<- int, wg *sync.WaitGroup) {
+    defer wg.Done()
+    for j := range jobs {
+        fmt.Printf("worker %d processing job %d\n", id, j)
+        time.Sleep(time.Millisecond * 100)
+        results <- j * 2
+    }
+}
+
+func main() {
+    jobs := make(chan int, 100)
+    results := make(chan int, 100)
+    var wg sync.WaitGroup
+    
+    // Start workers
+    for w := 1; w <= 3; w++ {
+        wg.Add(1)
+        go worker(w, jobs, results, &wg)
+    }
+    
+    // Send jobs
+    for j := 1; j <= 9; j++ {
+        jobs <- j
+    }
+    close(jobs)
+    
+    // Wait for workers
+    wg.Wait()
+    close(results)
+    
+    // Collect results
+    for r := range results {
+        fmt.Printf("Result: %d\n", r)
+    }
+}
+```
+
+### Rust Concurrency
+```rust
+use std::sync::mpsc;
+use std::thread;
+use std::time::Duration;
+
+fn worker(id: u32, receiver: mpsc::Receiver<u32>, sender: mpsc::Sender<u32>) {
+    for job in receiver {
+        println!("worker {} processing job {}", id, job);
+        thread::sleep(Duration::from_millis(100));
+        sender.send(job * 2).unwrap();
+    }
+}
+
+fn main() {
+    let (job_tx, job_rx) = mpsc::channel();
+    let (result_tx, result_rx) = mpsc::channel();
+    let job_rx = std::sync::Arc::new(std::sync::Mutex::new(job_rx));
+    
+    // Start workers
+    let mut handles = vec![];
+    for id in 1..=3 {
+        let job_rx = job_rx.clone();
+        let result_tx = result_tx.clone();
+        handles.push(thread::spawn(move || {
+            worker(id, job_rx.lock().unwrap(), result_tx);
+        }));
+    }
+    
+    // Send jobs
+    for j in 1..=9 {
+        job_tx.send(j).unwrap();
+    }
+    drop(job_tx);
+    
+    // Collect results
+    for _ in 1..=9 {
+        println!("Result: {}", result_rx.recv().unwrap());
+    }
+    
+    // Wait for workers
+    for handle in handles {
+        handle.join().unwrap();
+    }
+}
+```
+
+This demonstrates various code styling features:
+
+1. Syntax highlighting for multiple languages
+2. Different programming paradigms
+3. Complex code structures
+4. Error handling patterns
+5. Memory management
+6. Concurrency patterns
+7. Type systems
+8. Modern language features

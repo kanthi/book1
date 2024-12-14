@@ -1,0 +1,189 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "KINGsNOTES"
+  author: "K19N"
+  date: last-modified
+  navbar:
+    pinned: true
+    right:
+      - icon: github
+        href: https://github.com/yourusername
+      - icon: twitter
+        href: https://twitter.com/yourusername
+      - icon: linkedin
+        href: https://linkedin.com/in/yourusername
+  sidebar:
+    style: docked
+    collapse-level: 1
+  chapters:
+    - index.qmd
+    - part: "Commands"
+      contents:
+        - section: "01_FileOps"
+          contents:
+            - text: "chmod"
+              file: content/01-Commands/01_FileOps/chmod.qmd
+            - text: "cp"
+              file: content/01-Commands/01_FileOps/cp.qmd
+            - text: "ls"
+              file: content/01-Commands/01_FileOps/ls.qmd
+            - text: "mv"
+              file: content/01-Commands/01_FileOps/mv.qmd
+            - text: "rm"
+              file: content/01-Commands/01_FileOps/rm.qmd
+        - section: "02_Info"
+          contents:
+            - text: "apropos"
+              file: content/01-Commands/02_Info/01_apropos.qmd
+            - text: "info"
+              file: content/01-Commands/02_Info/02_info.qmd
+            - text: "man"
+              file: content/01-Commands/02_Info/03_man.qmd
+            - text: "whatis"
+              file: content/01-Commands/02_Info/04_whatis.qmd
+        - section: "03_ProcessMgmt"
+          contents:
+            - text: "_ProcessMgmt"
+              file: content/01-Commands/03_ProcessMgmt/ls-zed.qmd
+            - text: "ps"
+              file: content/01-Commands/03_ProcessMgmt/ps.qmd
+            - text: "Monitoring Commands"
+              file: content/01-Commands/03_ProcessMgmt/test.qmd
+            - text: "top"
+              file: content/01-Commands/03_ProcessMgmt/top.qmd
+        - section: "04_Monitoring"
+          contents:
+            - text: "iostat"
+              file: content/01-Commands/04_Monitoring/01_iostat.md
+            - text: "iostat zed"
+              file: content/01-Commands/04_Monitoring/02_iostat1.md
+            - text: "vmstat"
+              file: content/01-Commands/04_Monitoring/03_vmstat.md
+    - part: "Networking"
+      contents:
+        - section: "01_TCPIP"
+          contents:
+            - text: "Intro"
+              file: content/01-Networking/01_TCPIP/01_introduction.md
+        - section: "02_CCNA"
+          contents:
+            - text: "Intro"
+              file: content/01-Networking/02_CCNA/01_introduction.md
+    - part: "_Linux"
+      contents:
+        - section: "01_Commands"
+          contents:
+    - part: "GitOps"
+      contents:
+        - text: "Git Commands"
+          file: content/06-GitOps/git-cheatsheat.md
+        - text: "Git"
+          file: content/06-GitOps/git-github-guide.md
+    - part: "NixOS"
+      contents:
+        - section: "01_Nix_Language"
+          contents:
+            - text: "variables"
+              file: content/08-NixOS/01_Nix_Language/02_variables.md
+            - text: "functions"
+              file: content/08-NixOS/01_Nix_Language/03_functions.md
+            - text: "Introduction"
+              file: content/08-NixOS/01_Nix_Language/intro.md
+        - section: "02_NixOS_Server"
+          contents:
+    - part: "Category1"
+      contents:
+        - section: "subcategory1"
+          contents:
+            - text: "Introduction to Category 1"
+              file: content/category1/subcategory1/index.qmd
+        - section: "subcategory2"
+          contents:
+            - text: "Advanced Topics {#sec-advanced-topics}"
+              file: content/category1/subcategory2/index.qmd
+        - section: "subcategory3"
+          contents:
+            - text: "Writing Best Practices"
+              file: content/category1/subcategory3/index.qmd
+        - section: "subcategory4"
+          contents:
+            - text: "Document Planning"
+              file: content/category1/subcategory4/index.qmd
+    - part: "Category2"
+      contents:
+        - text: "Category 2 Content"
+          file: content/category2/index.qmd
+        - section: "subcategory1"
+          contents:
+            - text: "Visual Elements"
+              file: content/category2/subcategory1/index.qmd
+        - section: "subcategory2"
+          contents:
+            - text: "Publication Formats"
+              file: content/category2/subcategory2/index.qmd
+    - part: "Category3"
+      contents:
+        - section: "subcategory1"
+          contents:
+            - text: "Review and Feedback"
+              file: content/category3/subcategory1/index.qmd
+        - section: "subcategory2"
+          contents:
+            - text: "Distribution and Maintenance"
+              file: content/category3/subcategory2/index.qmd
+    - part: "Testing"
+      contents:
+        - text: "Software Testing Overview"
+          file: content/testing/index.qmd
+        - section: "advanced"
+          contents:
+            - text: "Testing Strategies"
+              file: content/testing/advanced/01-strategies.md
+            - text: "Testing Patterns"
+              file: content/testing/advanced/02-patterns.md
+        - section: "basics"
+          contents:
+            - text: "Introduction to Testing Basics"
+              file: content/testing/basics/01-intro.md
+            - text: "Types of Testing"
+              file: content/testing/basics/02-types.md
+        - section: "code-examples"
+          contents:
+            - text: "Code Examples Across Languages"
+              file: content/testing/code-examples/index.qmd
+        - section: "integration-testing"
+          contents:
+            - text: "Integration Testing Strategies"
+              file: content/testing/integration-testing/index.qmd
+        - section: "unit-testing"
+          contents:
+            - text: "Unit Testing Best Practices"
+              file: content/testing/unit-testing/index.qmd
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles/light.scss]
+      dark: [darkly, styles/dark.scss]
+    code-fold: true
+    toc: true
+    number-sections: false
+    page-navigation: true
+
+  pdf:
+    documentclass: scrreprt
+    classoption: ["oneside"]
+    number-sections: false
+    colorlinks: true
+    geometry:
+      - top=25mm
+      - left=25mm
+      - right=25mm
+      - bottom=25mm
+
+  epub:
+    toc: true
+    number-sections: false

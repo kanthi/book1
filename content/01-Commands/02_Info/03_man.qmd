@@ -1,0 +1,61 @@
+---
+title: "man"
+---
+
+## Overview
+
+The `man` command is used to display the system's manual pages. It provides detailed documentation for commands, system calls, libraries, and more.
+
+## Syntax
+
+```bash
+man [section] command_name
+```
+
+## Manual Sections
+
+1. User Commands
+2. System Calls
+3. Library Functions
+4. Special Files
+5. File Formats
+6. Games
+7. Miscellaneous
+8. System Administration
+
+## Common Options
+
+- `-f`: Same as whatis
+- `-k`: Same as apropos
+- `-w`: Print manual page locations
+- `-a`: Display all matching pages
+
+## Examples
+
+```bash
+# View manual for ls command
+man ls
+
+# View specific section
+man 2 write
+
+# Find all related pages
+man -k password
+
+# Show manual page location
+man -w bash
+```
+
+## Navigation
+
+- `Space`: Next page
+- `b`: Previous page
+- `/pattern`: Search forward
+- `n`: Next match
+- `q`: Quit
+
+## Tips
+
+1. Use `man man` to learn more about the man command
+2. Section numbers help find specific documentation
+3. The `-k` option helps find related commands

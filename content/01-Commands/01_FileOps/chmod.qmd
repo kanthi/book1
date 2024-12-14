@@ -1,0 +1,75 @@
+---
+title: "chmod"
+---
+
+## Overview
+
+The `chmod` command changes file and directory permissions. Essential for security and access control.
+
+## Syntax
+
+```bash
+chmod [options] mode file(s)
+```
+
+## Permission Modes
+
+### Symbolic Mode
+- `u`: User/owner
+- `g`: Group
+- `o`: Others
+- `a`: All
+
+### Operations
+- `+`: Add permission
+- `-`: Remove permission
+- `=`: Set exact permission
+
+### Permissions
+- `r`: Read (4)
+- `w`: Write (2)
+- `x`: Execute (1)
+
+## Common Options
+
+- `-R`: Recursive
+- `-v`: Verbose
+- `-f`: Force
+- `-c`: Report changes
+
+## Examples
+
+```bash
+# Give execute permission to owner
+chmod u+x script.sh
+
+# Remove write permission from others
+chmod o-w file.txt
+
+# Set full permissions for owner only
+chmod 700 private.key
+
+# Add execute for all
+chmod a+x program
+
+# Set complex permissions
+chmod u=rwx,g=rx,o= file
+
+# Recursive change
+chmod -R 755 directory/
+```
+
+## Common Permission Patterns
+
+- `chmod 777`: Full access for all (dangerous)
+- `chmod 755`: Standard for executables
+- `chmod 644`: Standard for regular files
+- `chmod 600`: Private files
+- `chmod 440`: Read-only for user and group
+
+## Tips
+
+1. Use symbolic mode for specific changes
+2. Use numeric mode for full permission sets
+3. Be careful with recursive changes
+4. Consider security implications

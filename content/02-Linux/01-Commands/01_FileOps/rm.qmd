@@ -1,0 +1,67 @@
+---
+title: "rm"
+---
+
+## Overview
+
+The `rm` command removes files and directories. Use with caution as recovery is often impossible.
+
+## Syntax
+
+```bash
+rm [options] file(s)
+```
+
+## Common Options
+
+- `-r`, `-R`: Recursive removal
+- `-f`: Force removal
+- `-i`: Interactive mode
+- `-v`: Verbose mode
+- `-d`: Remove empty directories
+- `--preserve-root`: Prevent root directory deletion
+
+## Examples
+
+```bash
+# Remove single file
+rm file.txt
+
+# Remove interactively
+rm -i important.txt
+
+# Remove directory and contents
+rm -r directory/
+
+# Force remove without prompts
+rm -rf old_directory/
+
+# Remove empty directory
+rm -d empty_dir/
+
+# Verbose removal
+rm -v *.tmp
+```
+
+## Safety Tips
+
+1. ALWAYS double-check wildcards
+2. Use `-i` for important operations
+3. Never use `rm -rf /`
+4. Consider using trash instead
+5. Make backups before bulk deletions
+
+## Alternative Methods
+
+1. Using trash-cli:
+```bash
+trash file.txt
+trash-list
+trash-restore
+```
+
+2. Creating aliases:
+```bash
+alias rm='rm -i'
+alias del='mv -t ~/.trash'
+```

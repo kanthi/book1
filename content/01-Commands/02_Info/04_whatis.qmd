@@ -1,0 +1,41 @@
+---
+title: "whatis"
+---
+
+## Overview
+
+The `whatis` command displays one-line manual page descriptions. It's useful for quickly finding out what a command does without reading the full manual page.
+
+## Syntax
+
+```bash
+whatis [options] command_name
+```
+
+## Common Options
+
+- `-w`: Wildcard search
+- `-r`: Regex search
+- `-l`: List all matches
+
+## Examples
+
+```bash
+# Basic usage
+whatis ls
+# Output: ls (1) - list directory contents
+
+# Multiple commands
+whatis cp mv rm
+# Output shows description for each command
+
+# Wildcard search
+whatis -w "ls*"
+# Shows all commands starting with 'ls'
+```
+
+## Tips
+
+1. Use `whatis` for quick command reference
+2. Combine with `apropos` for more detailed searches
+3. Great for learning new commands

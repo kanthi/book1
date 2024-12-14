@@ -1,0 +1,51 @@
+---
+title: "ls"
+---
+
+## Overview
+
+The `ls` command lists directory contents. It's one of the most frequently used commands in Linux.
+
+## Syntax
+
+```bash
+ls [options] [file/directory]
+```
+
+## Common Options
+
+- `-l`: Long listing format
+- `-a`: Show all files (including hidden)
+- `-h`: Human-readable sizes
+- `-R`: Recursive listing
+- `-t`: Sort by modification time
+- `-S`: Sort by file size
+
+## Examples
+
+```bash
+# Basic listing
+ls
+
+# Detailed listing with human-readable sizes
+ls -lh
+
+# Show hidden files
+ls -la
+
+# Sort by size
+ls -lS
+
+# Recent files first
+ls -lt
+
+# Recursive listing
+ls -R
+```
+
+## Tips
+
+1. Use `ls -lah` for complete detailed view
+2. Combine with `grep` for filtering
+3. Use color coding for better visibility
+4. Sort options help find specific files quickly

@@ -1,0 +1,47 @@
+# Unit Testing Best Practices
+
+Unit testing is the foundation of a solid testing strategy. This chapter covers essential unit testing concepts and practices.
+
+## What is Unit Testing?
+
+Unit testing involves testing individual components or functions in isolation. A unit test typically follows this pattern:
+
+1. Arrange - Set up the test conditions
+2. Act - Execute the code being tested
+3. Assert - Verify the results
+
+## Writing Good Unit Tests
+
+Here are some key principles:
+
+- Test one thing at a time
+- Use descriptive test names
+- Follow the FIRST principles:
+  - Fast
+  - Independent
+  - Repeatable
+  - Self-validating
+  - Timely
+
+## Example Test Case
+
+```python
+def test_add_numbers():
+    # Arrange
+    a = 5
+    b = 3
+    expected = 8
+    
+    # Act
+    result = add_numbers(a, b)
+    
+    # Assert
+    assert result == expected
+```
+
+## Common Pitfalls
+
+- Testing implementation details
+- Brittle tests
+- Poor test isolation
+- Missing edge cases

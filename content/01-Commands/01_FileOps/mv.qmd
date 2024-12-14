@@ -1,0 +1,51 @@
+---
+title: "mv"
+---
+
+## Overview
+
+The `mv` command moves or renames files and directories. It's essential for file management.
+
+## Syntax
+
+```bash
+mv [options] source destination
+```
+
+## Common Options
+
+- `-i`: Interactive mode
+- `-f`: Force move
+- `-n`: No overwrite
+- `-v`: Verbose
+- `-u`: Update only
+- `-b`: Create backup
+
+## Examples
+
+```bash
+# Rename a file
+mv oldname.txt newname.txt
+
+# Move file to directory
+mv file.txt /path/to/dir/
+
+# Move multiple files
+mv file1.txt file2.txt dir/
+
+# Interactive move
+mv -i important.txt /backup/
+
+# Move with backup
+mv -b file.txt /path/
+
+# Move newer files only
+mv -u *.txt /path/
+```
+
+## Tips
+
+1. Use `-i` for important files
+2. Create backups with `-b`
+3. Test with `-v` first
+4. Check destination space

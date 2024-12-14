@@ -1,0 +1,40 @@
+# Integration Testing Strategies
+
+Integration testing ensures that different components of your system work together correctly.
+
+## Understanding Integration Tests
+
+Integration tests verify the interaction between:
+
+- Multiple functions or classes
+- Different modules or services
+- External dependencies
+- Database interactions
+
+## Testing Approaches
+
+### Top-Down Integration
+
+Start with high-level components and gradually test lower-level modules:
+
+```mermaid
+graph TD
+    A[UI Layer] --> B[Business Logic]
+    B --> C[Data Access]
+    C --> D[Database]
+```
+
+### Bottom-Up Integration
+
+Begin with low-level components and progressively test higher layers.
+
+## Best Practices
+
+1. Use test doubles when needed:
+   - Mocks
+   - Stubs
+   - Fakes
+
+2. Focus on component interfaces
+3. Test realistic scenarios
+4. Consider error conditions

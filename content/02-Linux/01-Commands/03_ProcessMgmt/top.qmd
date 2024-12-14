@@ -1,0 +1,67 @@
+---
+title: "top"
+---
+
+## Overview
+
+The `top` command provides a dynamic real-time view of running processes. It's interactive and updates periodically.
+
+## Syntax
+
+```bash
+top [options]
+```
+
+## Interactive Commands
+
+- `q`: Quit
+- `h`: Help
+- `k`: Kill process
+- `r`: Renice process
+- `f`: Select fields
+- `o`: Change sort field
+- `W`: Save settings
+
+## Display Fields
+
+1. System Summary
+   - Uptime and load averages
+   - Tasks and CPU states
+   - Memory usage (RAM/Swap)
+
+2. Process List
+   - PID: Process ID
+   - USER: Process owner
+   - PR: Priority
+   - NI: Nice value
+   - VIRT: Virtual memory
+   - RES: Physical memory
+   - SHR: Shared memory
+   - S: Process status
+   - %CPU: CPU usage
+   - %MEM: Memory usage
+   - TIME+: CPU time
+   - COMMAND: Command name
+
+## Common Options
+
+```bash
+# Update every 2 seconds
+top -d 2
+
+# Show specific user's processes
+top -u username
+
+# Batch mode (non-interactive)
+top -b -n 1
+
+# Sort by memory usage
+top -o %MEM
+```
+
+## Tips
+
+1. Use `1` to show individual CPU cores
+2. `M` sorts by memory usage
+3. `P` sorts by CPU usage
+4. `c` shows full command path

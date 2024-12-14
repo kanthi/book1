@@ -1,0 +1,95 @@
+---
+title: "Monitoring Commands"
+---
+
+## Overview
+
+Linux monitoring commands help track system resources, processes, and performance metrics in real-time.
+
+## Common Commands
+
+### top/htop
+- Real-time system monitoring
+- Shows CPU, memory, processes
+- Interactive process viewer
+
+### vmstat
+- Virtual memory statistics
+- System performance data
+- CPU/memory/IO metrics
+
+### iostat
+- CPU and I/O statistics
+- Disk activity monitoring
+- System input/output stats
+
+## Resource Monitoring
+
+### Memory Commands
+- `free`: Display memory usage
+- `pmap`: Process memory map
+- `smem`: Memory reporting tool
+
+### CPU Commands
+- `mpstat`: CPU statistics
+- `sar`: System activity reporter
+- `uptime`: Load average info
+
+### Disk Commands
+- `df`: Disk space usage
+- `du`: Directory space usage
+- `iotop`: I/O monitoring
+
+## Common Options
+
+- `-h`: Human readable
+- `-c`: Continuous monitoring
+- `-d`: Delay between updates
+- `-p`: Process specific monitoring
+
+## Examples
+
+```bash
+# Monitor memory every 2 seconds
+free -h -s 2
+
+# Check disk space in human readable format
+df -h
+
+# Monitor CPU usage
+mpstat 1
+
+# Watch disk I/O
+iostat -xz 1
+
+# Monitor specific process
+top -p PID
+
+# Check system load
+uptime
+```
+
+## Common Monitoring Patterns
+
+- `top -u username`: Monitor user processes
+- `free -m`: Memory in megabytes
+- `df -i`: Check inode usage
+- `du -sh */`: Directory sizes
+- `sar -u 1 5`: CPU usage for 5 seconds
+
+## Tips
+
+1. Use appropriate update intervals
+2. Consider system impact
+3. Filter output for relevant data
+4. Save output for analysis
+5. Use tools in combination
+
+## Pro Tips
+
+1. Create aliases for common monitoring
+2. Schedule regular checks
+3. Set up monitoring thresholds
+4. Keep historical data
+5. Use graphical tools when needed
+```

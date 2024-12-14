@@ -1,0 +1,71 @@
+## Using the ls command {.sec-ls-command}
+
+The `ls` command is one of the most commonly used commands in Linux and Unix systems. It is used to list the contents of a directory.
+
+### Basic Usage
+
+The basic syntax is:
+
+```bash
+ls [options] [directory]
+```
+
+If no directory is specified, ls will show contents of the current directory.
+
+### Common Options
+
+Some frequently used options include:
+
+- `-l`: Long listing format showing detailed file information
+- `-a`: Show all files including hidden ones (starting with .)  
+- `-h`: Human readable file sizes
+- `-R`: Recursive listing of subdirectories
+- `-t`: Sort by modification time
+- `-S`: Sort by file size
+
+### Examples
+
+List current directory contents:
+```bash 
+ls
+```
+
+Show detailed file information:
+```bash
+ls -l
+```
+
+Show hidden files:
+```bash
+ls -la
+```
+
+List files recursively in subdirectories:
+```bash
+ls -R
+```
+
+Show files sorted by size in human readable format:
+```bash
+ls -lhS
+```
+
+### Output Explanation
+
+When using `ls -l`, the output shows:
+
+- File permissions 
+- Number of hard links
+- Owner name
+- Group name
+- File size
+- Last modified date/time
+- Filename
+
+For example:
+```bash
+drwxr-xr-x  2 user group 4096 Jan 1 10:00 Documents
+-rw-r--r--  1 user group  123 Jan 1 09:00 file.txt
+```
+
+The `ls` command is essential for navigating and managing files in Unix-like systems.

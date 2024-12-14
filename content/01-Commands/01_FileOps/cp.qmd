@@ -1,0 +1,52 @@
+---
+title: "cp"
+---
+
+## Overview
+
+The `cp` command copies files and directories. It can preserve attributes and handle recursive operations.
+
+## Syntax
+
+```bash
+cp [options] source destination
+```
+
+## Common Options
+
+- `-r`, `-R`: Recursive copy
+- `-i`: Interactive (prompt before overwrite)
+- `-p`: Preserve attributes
+- `-v`: Verbose output
+- `-u`: Update (copy only newer files)
+- `-l`: Create hard links
+- `-s`: Create symbolic links
+
+## Examples
+
+```bash
+# Basic file copy
+cp file1.txt file2.txt
+
+# Copy directory recursively
+cp -r dir1/ dir2/
+
+# Preserve attributes
+cp -p source.txt dest.txt
+
+# Interactive copy
+cp -i *.txt /backup/
+
+# Update only newer files
+cp -u * /backup/
+
+# Copy with progress
+cp -v largefile.iso /media/
+```
+
+## Tips
+
+1. Use `-i` to prevent accidental overwrites
+2. `-a` preserves all attributes
+3. `-u` is useful for backups
+4. Use wildcards carefully
