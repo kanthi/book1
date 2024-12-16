@@ -64,17 +64,53 @@ book:
               file: content/01-Commands/04_Monitoring/03_vmstat.md
     - part: "Networking"
       contents:
+        - section: "01-basics"
+          contents:
         - section: "01_TCPIP"
           contents:
             - text: "Intro"
-              file: content/01-Networking/01_TCPIP/01_introduction.md
+              file: content/01-networking/01_TCPIP/01_introduction.md
+        - section: "02-protocols"
+          contents:
         - section: "02_CCNA"
           contents:
             - text: "Intro"
-              file: content/01-Networking/02_CCNA/01_introduction.md
+              file: content/01-networking/02_CCNA/01_introduction.md
+        - section: "03-security"
+          contents:
     - part: "Linux"
       contents:
         - section: "01-Commands"
+          contents:
+        - section: "01-fundamentals"
+          contents:
+        - section: "02-shell-scripting"
+          contents:
+        - section: "03-system-admin"
+          contents:
+    - part: "Git"
+      contents:
+        - section: "01-basics"
+          contents:
+        - section: "02-advanced"
+          contents:
+        - section: "03-workflows"
+          contents:
+    - part: "Containers"
+      contents:
+        - section: "01-docker"
+          contents:
+        - section: "02-kubernetes"
+          contents:
+        - section: "03-orchestration"
+          contents:
+    - part: "Ci Cd"
+      contents:
+        - section: "01-jenkins"
+          contents:
+        - section: "02-github-actions"
+          contents:
+        - section: "03-gitlab-ci"
           contents:
     - part: "GitOps"
       contents:
@@ -82,6 +118,14 @@ book:
           file: content/06-GitOps/git-cheatsheat.md
         - text: "Git"
           file: content/06-GitOps/git-github-guide.md
+    - part: "Infrastructure"
+      contents:
+        - section: "01-terraform"
+          contents:
+        - section: "02-ansible"
+          contents:
+        - section: "03-cloud-platforms"
+          contents:
     - part: "Category1"
       contents:
         - section: "subcategory1"
@@ -122,6 +166,16 @@ book:
           contents:
             - text: "Distribution and Maintenance"
               file: content/category3/subcategory2/index.qmd
+    - part: "Templates"
+      contents:
+        - text: "Chapter Title"
+          file: content/templates/chapter_template.md
+        - text: "Code Block Template"
+          file: content/templates/code_block.md
+        - text: "Linux Command Reference"
+          file: content/templates/linux_commands.md
+        - text: "Troubleshooting Template"
+          file: content/templates/troubleshooting.md
     - part: "Testing"
       contents:
         - text: "Software Testing Overview"
