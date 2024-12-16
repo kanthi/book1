@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Introduction to Category 1 – KINGsNOTES</title>
+<title>Linux Command Reference – KINGsNOTES</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,28 +20,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<link href="../../../content/category1/subcategory2/index.html" rel="next">
-<link href="../../../content/06-GitOps/git-github-guide.html" rel="prev">
-<script src="../../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-17ac54e10f9eb54c0ecc9ef4cb28b864.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-a0beef04198612cb35640aed58c0a7d4.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-c6cef58ce921ca519ef26fa7d5e36709.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-5830312cd86bca92a2bce9e6ab7e1916.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../content/templates/linux_lab.html" rel="next">
+<link href="../../content/templates/code_block.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-17ac54e10f9eb54c0ecc9ef4cb28b864.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-a0beef04198612cb35640aed58c0a7d4.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-c6cef58ce921ca519ef26fa7d5e36709.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-5830312cd86bca92a2bce9e6ab7e1916.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">KINGsNOTES</span>
     </a>
   </div>
@@ -117,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Category1</li><li class="breadcrumb-item"><a href="../../../content/category1/subcategory1/index.html">subcategory1</a></li><li class="breadcrumb-item"><a href="../../../content/category1/subcategory1/index.html"><span class="chapter-title">Introduction to Category 1</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/templates/chapter_template.html">Templates</a></li><li class="breadcrumb-item"><a href="../../content/templates/linux_commands.html"><span class="chapter-title">Linux Command Reference</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -131,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -155,27 +189,27 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/01-Commands/01_FileOps/chmod.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">chmod</span></a>
+  <a href="../../content/01-Commands/01_FileOps/chmod.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">chmod</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/01-Commands/01_FileOps/cp.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">cp</span></a>
+  <a href="../../content/01-Commands/01_FileOps/cp.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">cp</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/01-Commands/01_FileOps/ls.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ls</span></a>
+  <a href="../../content/01-Commands/01_FileOps/ls.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ls</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/01-Commands/01_FileOps/mv.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">mv</span></a>
+  <a href="../../content/01-Commands/01_FileOps/mv.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">mv</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/01-Commands/01_FileOps/rm.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">rm</span></a>
+  <a href="../../content/01-Commands/01_FileOps/rm.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">rm</span></a>
   </div>
 </li>
       </ul>
@@ -191,22 +225,22 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/01-Commands/02_Info/01_apropos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">apropos</span></a>
+  <a href="../../content/01-Commands/02_Info/01_apropos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">apropos</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/01-Commands/02_Info/02_info.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">info</span></a>
+  <a href="../../content/01-Commands/02_Info/02_info.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">info</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/01-Commands/02_Info/03_man.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">man</span></a>
+  <a href="../../content/01-Commands/02_Info/03_man.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">man</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/01-Commands/02_Info/04_whatis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">whatis</span></a>
+  <a href="../../content/01-Commands/02_Info/04_whatis.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">whatis</span></a>
   </div>
 </li>
       </ul>
@@ -222,22 +256,22 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/01-Commands/03_ProcessMgmt/ls-zed.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">_ProcessMgmt</span></a>
+  <a href="../../content/01-Commands/03_ProcessMgmt/ls-zed.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">_ProcessMgmt</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/01-Commands/03_ProcessMgmt/ps.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ps</span></a>
+  <a href="../../content/01-Commands/03_ProcessMgmt/ps.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ps</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/01-Commands/03_ProcessMgmt/test.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Monitoring Commands</span></a>
+  <a href="../../content/01-Commands/03_ProcessMgmt/test.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Monitoring Commands</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/01-Commands/03_ProcessMgmt/top.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">top</span></a>
+  <a href="../../content/01-Commands/03_ProcessMgmt/top.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">top</span></a>
   </div>
 </li>
       </ul>
@@ -253,17 +287,17 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/01-Commands/04_Monitoring/01_iostat.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">iostat</span></a>
+  <a href="../../content/01-Commands/04_Monitoring/01_iostat.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">iostat</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/01-Commands/04_Monitoring/02_iostat1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">iostat zed</span></a>
+  <a href="../../content/01-Commands/04_Monitoring/02_iostat1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">iostat zed</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/01-Commands/04_Monitoring/03_vmstat.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">vmstat</span></a>
+  <a href="../../content/01-Commands/04_Monitoring/03_vmstat.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">vmstat</span></a>
   </div>
 </li>
       </ul>
@@ -290,7 +324,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/01-Networking/01_TCPIP/01_introduction.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Intro</span></a>
+  <a href="../../content/01-Networking/01_TCPIP/01_introduction.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Intro</span></a>
   </div>
 </li>
       </ul>
@@ -306,7 +340,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/01-Networking/02_CCNA/01_introduction.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Intro</span></a>
+  <a href="../../content/01-Networking/02_CCNA/01_introduction.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Intro</span></a>
   </div>
 </li>
       </ul>
@@ -339,37 +373,37 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/06-GitOps/git-cheatsheat.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Git Commands</span></a>
+  <a href="../../content/06-GitOps/git-cheatsheat.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Git Commands</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/06-GitOps/git-github-guide.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Git</span></a>
+  <a href="../../content/06-GitOps/git-github-guide.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Git</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false">
  <span class="menu-text">Category1</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false">
  <span class="menu-text">subcategory1</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/category1/subcategory1/index.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Introduction to Category 1</span></a>
+  <a href="../../content/category1/subcategory1/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to Category 1</span></a>
   </div>
 </li>
       </ul>
@@ -385,7 +419,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/category1/subcategory2/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Advanced Topics {#sec-advanced-topics}</span></a>
+  <a href="../../content/category1/subcategory2/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Advanced Topics {#sec-advanced-topics}</span></a>
   </div>
 </li>
       </ul>
@@ -401,7 +435,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/category1/subcategory3/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Writing Best Practices</span></a>
+  <a href="../../content/category1/subcategory3/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Writing Best Practices</span></a>
   </div>
 </li>
       </ul>
@@ -417,7 +451,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/category1/subcategory4/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Document Planning</span></a>
+  <a href="../../content/category1/subcategory4/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Document Planning</span></a>
   </div>
 </li>
       </ul>
@@ -435,7 +469,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/category2/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Category 2 Content</span></a>
+  <a href="../../content/category2/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Category 2 Content</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
@@ -449,7 +483,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-18" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/category2/subcategory1/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visual Elements</span></a>
+  <a href="../../content/category2/subcategory1/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Visual Elements</span></a>
   </div>
 </li>
       </ul>
@@ -465,7 +499,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-19" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/category2/subcategory2/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Publication Formats</span></a>
+  <a href="../../content/category2/subcategory2/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Publication Formats</span></a>
   </div>
 </li>
       </ul>
@@ -492,7 +526,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-21" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/category3/subcategory1/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Review and Feedback</span></a>
+  <a href="../../content/category3/subcategory1/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Review and Feedback</span></a>
   </div>
 </li>
       </ul>
@@ -508,7 +542,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-22" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/category3/subcategory2/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Distribution and Maintenance</span></a>
+  <a href="../../content/category3/subcategory2/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Distribution and Maintenance</span></a>
   </div>
 </li>
       </ul>
@@ -517,41 +551,41 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="true">
  <span class="menu-text">Templates</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-23" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-23" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/templates/chapter_template.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chapter Title</span></a>
+  <a href="../../content/templates/chapter_template.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chapter Title</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/templates/code_block.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Code Block Template</span></a>
+  <a href="../../content/templates/code_block.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Code Block Template</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/templates/linux_commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Linux Command Reference</span></a>
+  <a href="../../content/templates/linux_commands.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Linux Command Reference</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/templates/linux_lab.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Linux Lab Exercise</span></a>
+  <a href="../../content/templates/linux_lab.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Linux Lab Exercise</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/templates/networking_lab.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Networking Lab Exercise</span></a>
+  <a href="../../content/templates/networking_lab.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Networking Lab Exercise</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/templates/troubleshooting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Troubleshooting Template</span></a>
+  <a href="../../content/templates/troubleshooting.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Troubleshooting Template</span></a>
   </div>
 </li>
       </ul>
@@ -567,7 +601,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-24" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/testing/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Software Testing Overview</span></a>
+  <a href="../../content/testing/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Software Testing Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
@@ -581,12 +615,12 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-25" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/testing/advanced/01-strategies.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Testing Strategies</span></a>
+  <a href="../../content/testing/advanced/01-strategies.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Testing Strategies</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/testing/advanced/02-patterns.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Testing Patterns</span></a>
+  <a href="../../content/testing/advanced/02-patterns.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Testing Patterns</span></a>
   </div>
 </li>
       </ul>
@@ -602,12 +636,12 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-26" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/testing/basics/01-intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to Testing Basics</span></a>
+  <a href="../../content/testing/basics/01-intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to Testing Basics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/testing/basics/02-types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Types of Testing</span></a>
+  <a href="../../content/testing/basics/02-types.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Types of Testing</span></a>
   </div>
 </li>
       </ul>
@@ -623,7 +657,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-27" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/testing/code-examples/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Code Examples Across Languages</span></a>
+  <a href="../../content/testing/code-examples/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Code Examples Across Languages</span></a>
   </div>
 </li>
       </ul>
@@ -639,7 +673,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-28" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/testing/integration-testing/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Integration Testing Strategies</span></a>
+  <a href="../../content/testing/integration-testing/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Integration Testing Strategies</span></a>
   </div>
 </li>
       </ul>
@@ -655,7 +689,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-29" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/testing/unit-testing/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Unit Testing Best Practices</span></a>
+  <a href="../../content/testing/unit-testing/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Unit Testing Best Practices</span></a>
   </div>
 </li>
       </ul>
@@ -672,22 +706,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#section-1.1" id="toc-section-1.1" class="nav-link active" data-scroll-target="#section-1.1">Section 1.1</a></li>
-  <li><a href="#section-1.2" id="toc-section-1.2" class="nav-link" data-scroll-target="#section-1.2">Section 1.2</a>
+  <li><a href="#command-name" id="toc-command-name" class="nav-link active" data-scroll-target="#command-name">Command Name</a>
   <ul class="collapse">
-  <li><a href="#subsection-1.2.1" id="toc-subsection-1.2.1" class="nav-link" data-scroll-target="#subsection-1.2.1">Subsection 1.2.1</a></li>
+  <li><a href="#description" id="toc-description" class="nav-link" data-scroll-target="#description">Description</a></li>
+  <li><a href="#syntax" id="toc-syntax" class="nav-link" data-scroll-target="#syntax">Syntax</a></li>
+  <li><a href="#common-options" id="toc-common-options" class="nav-link" data-scroll-target="#common-options">Common Options</a></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
+  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
+  <li><a href="#related-commands" id="toc-related-commands" class="nav-link" data-scroll-target="#related-commands">Related Commands</a></li>
+  <li><a href="#see-also" id="toc-see-also" class="nav-link" data-scroll-target="#see-also">See Also</a></li>
   </ul></li>
-  <li><a href="#tables" id="toc-tables" class="nav-link" data-scroll-target="#tables">Tables</a></li>
-  <li><a href="#cross-references" id="toc-cross-references" class="nav-link" data-scroll-target="#cross-references">Cross-references</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Category1</li><li class="breadcrumb-item"><a href="../../../content/category1/subcategory1/index.html">subcategory1</a></li><li class="breadcrumb-item"><a href="../../../content/category1/subcategory1/index.html"><span class="chapter-title">Introduction to Category 1</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/templates/chapter_template.html">Templates</a></li><li class="breadcrumb-item"><a href="../../content/templates/linux_commands.html"><span class="chapter-title">Linux Command Reference</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Introduction to Category 1</span></h1>
+<h1 class="title"><span class="chapter-title">Linux Command Reference</span></h1>
 </div>
 
 
@@ -704,48 +741,72 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is the main page for Category 1’s first subcategory.</p>
-<section id="section-1.1" class="level2">
-<h2 class="anchored" data-anchor-id="section-1.1">Section 1.1</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<section id="command-name" class="level2">
+<h2 class="anchored" data-anchor-id="command-name">Command Name</h2>
+<p><code>command</code></p>
+<section id="description" class="level3">
+<h3 class="anchored" data-anchor-id="description">Description</h3>
+<p>Brief description of what the command does.</p>
 </section>
-<section id="section-1.2" class="level2">
-<h2 class="anchored" data-anchor-id="section-1.2">Section 1.2</h2>
-<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-<section id="subsection-1.2.1" class="level3">
-<h3 class="anchored" data-anchor-id="subsection-1.2.1">Subsection 1.2.1</h3>
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<section id="syntax" class="level3">
+<h3 class="anchored" data-anchor-id="syntax">Syntax</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">command</span> <span class="pp">[</span><span class="ss">options</span><span class="pp">]</span> <span class="pp">[</span><span class="ss">arguments</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-</section>
-<section id="tables" class="level2">
-<h2 class="anchored" data-anchor-id="tables">Tables</h2>
+<section id="common-options" class="level3">
+<h3 class="anchored" data-anchor-id="common-options">Common Options</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Column 1</th>
-<th>Column 2</th>
-<th>Column 3</th>
+<th>Option</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Value 1</td>
-<td>Value 2</td>
-<td>Value 3</td>
+<td><code>-h, --help</code></td>
+<td>Display help message</td>
 </tr>
 <tr class="even">
-<td>Item A</td>
-<td>Item B</td>
-<td>Item C</td>
+<td><code>-v, --version</code></td>
+<td>Display version information</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="cross-references" class="level2">
-<h2 class="anchored" data-anchor-id="cross-references">Cross-references</h2>
-<p>You can reference other sections using <a href="../subcategory2/index.html" class="quarto-xref"><span>Advanced Topics</span></a>.</p>
+<section id="examples" class="level3">
+<h3 class="anchored" data-anchor-id="examples">Examples</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example 1: Basic usage</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">command</span> argument</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Example 2: Using with options</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="bu">command</span> <span class="at">-o</span> argument</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Example 3: Advanced usage</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="bu">command</span> <span class="at">--option</span> value argument</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="notes" class="level3">
+<h3 class="anchored" data-anchor-id="notes">Notes</h3>
+<ul>
+<li>Important note 1</li>
+<li>Important note 2</li>
+</ul>
+</section>
+<section id="related-commands" class="level3">
+<h3 class="anchored" data-anchor-id="related-commands">Related Commands</h3>
+<ul>
+<li>Related command 1</li>
+<li>Related command 2</li>
+</ul>
+</section>
+<section id="see-also" class="level3">
+<h3 class="anchored" data-anchor-id="see-also">See Also</h3>
+<ul>
+<li>Man page reference</li>
+<li>Online documentation link</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1312,13 +1373,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../content/06-GitOps/git-github-guide.html" class="pagination-link" aria-label="Git">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Git</span></span>
+      <a href="../../content/templates/code_block.html" class="pagination-link" aria-label="Code Block Template">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Code Block Template</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../content/category1/subcategory2/index.html" class="pagination-link" aria-label="Advanced Topics {#sec-advanced-topics}">
-        <span class="nav-page-text"><span class="chapter-title">Advanced Topics {#sec-advanced-topics}</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../content/templates/linux_lab.html" class="pagination-link" aria-label="Linux Lab Exercise">
+        <span class="nav-page-text"><span class="chapter-title">Linux Lab Exercise</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

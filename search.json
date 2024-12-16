@@ -1992,6 +1992,512 @@
     ]
   },
   {
+    "objectID": "content/templates/chapter_template.html",
+    "href": "content/templates/chapter_template.html",
+    "title": "Chapter Title",
+    "section": "",
+    "text": "Overview\nBrief overview of what this chapter covers.",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Chapter Title</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/chapter_template.html#learning-objectives",
+    "href": "content/templates/chapter_template.html#learning-objectives",
+    "title": "Chapter Title",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nObjective 1\nObjective 2\nObjective 3",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Chapter Title</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/chapter_template.html#main-content",
+    "href": "content/templates/chapter_template.html#main-content",
+    "title": "Chapter Title",
+    "section": "Main Content",
+    "text": "Main Content\n\nSection 1\nContent for section 1\n\n\nSection 2\nContent for section 2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Chapter Title</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/chapter_template.html#summary",
+    "href": "content/templates/chapter_template.html#summary",
+    "title": "Chapter Title",
+    "section": "Summary",
+    "text": "Summary\nBrief summary of key points covered in this chapter",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Chapter Title</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/chapter_template.html#practice-exercises",
+    "href": "content/templates/chapter_template.html#practice-exercises",
+    "title": "Chapter Title",
+    "section": "Practice Exercises",
+    "text": "Practice Exercises\n\nExercise 1\nExercise 2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Chapter Title</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/chapter_template.html#further-reading",
+    "href": "content/templates/chapter_template.html#further-reading",
+    "title": "Chapter Title",
+    "section": "Further Reading",
+    "text": "Further Reading\n\nReference 1\nReference 2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Chapter Title</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/code_block.html",
+    "href": "content/templates/code_block.html",
+    "title": "Code Block Template",
+    "section": "",
+    "text": "Description\nBrief description of what this code does.",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Code Block Template</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/code_block.html#prerequisites",
+    "href": "content/templates/code_block.html#prerequisites",
+    "title": "Code Block Template",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\nRequirement 1\nRequirement 2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Code Block Template</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/code_block.html#code",
+    "href": "content/templates/code_block.html#code",
+    "title": "Code Block Template",
+    "section": "Code",
+    "text": "Code\n// Code goes here",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Code Block Template</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/code_block.html#explanation",
+    "href": "content/templates/code_block.html#explanation",
+    "title": "Code Block Template",
+    "section": "Explanation",
+    "text": "Explanation\n\n\n\nLine Number\nDescription\n\n\n\n\n1-2\nWhat these lines do\n\n\n3-5\nPurpose of this block",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Code Block Template</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/code_block.html#output",
+    "href": "content/templates/code_block.html#output",
+    "title": "Code Block Template",
+    "section": "Output",
+    "text": "Output\nExpected output goes here",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Code Block Template</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/code_block.html#common-issues-and-solutions",
+    "href": "content/templates/code_block.html#common-issues-and-solutions",
+    "title": "Code Block Template",
+    "section": "Common Issues and Solutions",
+    "text": "Common Issues and Solutions\n\nIssue 1\n\nSolution\n\nIssue 2\n\nSolution",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Code Block Template</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/code_block.html#best-practices",
+    "href": "content/templates/code_block.html#best-practices",
+    "title": "Code Block Template",
+    "section": "Best Practices",
+    "text": "Best Practices\n\nBest practice 1\nBest practice 2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Code Block Template</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/code_block.html#references",
+    "href": "content/templates/code_block.html#references",
+    "title": "Code Block Template",
+    "section": "References",
+    "text": "References\n\nReference 1\nReference 2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Code Block Template</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/linux_commands.html",
+    "href": "content/templates/linux_commands.html",
+    "title": "Linux Command Reference",
+    "section": "",
+    "text": "Command Name\ncommand",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Linux Command Reference</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/linux_commands.html#command-name",
+    "href": "content/templates/linux_commands.html#command-name",
+    "title": "Linux Command Reference",
+    "section": "",
+    "text": "Description\nBrief description of what the command does.\n\n\nSyntax\ncommand [options] [arguments]\n\n\nCommon Options\n\n\n\nOption\nDescription\n\n\n\n\n-h, --help\nDisplay help message\n\n\n-v, --version\nDisplay version information\n\n\n\n\n\nExamples\n# Example 1: Basic usage\ncommand argument\n\n# Example 2: Using with options\ncommand -o argument\n\n# Example 3: Advanced usage\ncommand --option value argument\n\n\nNotes\n\nImportant note 1\nImportant note 2\n\n\n\nRelated Commands\n\nRelated command 1\nRelated command 2\n\n\n\nSee Also\n\nMan page reference\nOnline documentation link",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Linux Command Reference</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/linux_lab.html",
+    "href": "content/templates/linux_lab.html",
+    "title": "Linux Lab Exercise",
+    "section": "",
+    "text": "Lab Information",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Linux Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/linux_lab.html#lab-information",
+    "href": "content/templates/linux_lab.html#lab-information",
+    "title": "Linux Lab Exercise",
+    "section": "",
+    "text": "Lab Title:\nDuration:\nDifficulty Level: [Beginner/Intermediate/Advanced]",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Linux Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/linux_lab.html#objectives",
+    "href": "content/templates/linux_lab.html#objectives",
+    "title": "Linux Lab Exercise",
+    "section": "Objectives",
+    "text": "Objectives\n\nObjective 1\nObjective 2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Linux Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/linux_lab.html#environment-setup",
+    "href": "content/templates/linux_lab.html#environment-setup",
+    "title": "Linux Lab Exercise",
+    "section": "Environment Setup",
+    "text": "Environment Setup\n\nSystem Requirements\n\nOS: [Distribution and version]\nRAM: [Minimum requirement]\nStorage: [Minimum requirement]\n\n\n\nRequired Packages\n# Install required packages\nsudo apt-get install package1 package2\n# or\nsudo yum install package1 package2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Linux Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/linux_lab.html#lab-steps",
+    "href": "content/templates/linux_lab.html#lab-steps",
+    "title": "Linux Lab Exercise",
+    "section": "Lab Steps",
+    "text": "Lab Steps\n\nStep 1: [Description]\n# Commands to execute\ncommand1\ncommand2\nExpected Output:\n[Expected output here]\n\n\nStep 2: [Description]\n# Commands to execute\ncommand1\ncommand2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Linux Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/linux_lab.html#file-operations",
+    "href": "content/templates/linux_lab.html#file-operations",
+    "title": "Linux Lab Exercise",
+    "section": "File Operations",
+    "text": "File Operations\n\nImportant Files and Directories\n\n\n\nPath\nPurpose\n\n\n\n\n/path/to/file1\nDescription\n\n\n/path/to/file2\nDescription\n\n\n\n\n\nConfiguration Changes\nOriginal configuration:\n# Original content\nModified configuration:\n# Modified content",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Linux Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/linux_lab.html#service-management",
+    "href": "content/templates/linux_lab.html#service-management",
+    "title": "Linux Lab Exercise",
+    "section": "Service Management",
+    "text": "Service Management\n\nService Commands\n# Start service\nsudo systemctl start service_name\n\n# Check status\nsudo systemctl status service_name",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Linux Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/linux_lab.html#verification",
+    "href": "content/templates/linux_lab.html#verification",
+    "title": "Linux Lab Exercise",
+    "section": "Verification",
+    "text": "Verification\n\nSystem Checks\n# Verify system state\nverification_command1\nverification_command2\n\n\nLog Analysis\nImportant log locations: - /var/log/file1 - /var/log/file2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Linux Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/linux_lab.html#security-considerations",
+    "href": "content/templates/linux_lab.html#security-considerations",
+    "title": "Linux Lab Exercise",
+    "section": "Security Considerations",
+    "text": "Security Considerations\n\nSecurity note 1\nSecurity note 2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Linux Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/linux_lab.html#cleanup",
+    "href": "content/templates/linux_lab.html#cleanup",
+    "title": "Linux Lab Exercise",
+    "section": "Cleanup",
+    "text": "Cleanup\n# Commands to restore system state\ncleanup_command1\ncleanup_command2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Linux Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/linux_lab.html#troubleshooting",
+    "href": "content/templates/linux_lab.html#troubleshooting",
+    "title": "Linux Lab Exercise",
+    "section": "Troubleshooting",
+    "text": "Troubleshooting\n\nCommon Issues\n\nIssue 1\n\nSolution: [Solution details]\n\nIssue 2\n\nSolution: [Solution details]",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Linux Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/linux_lab.html#additional-exercises",
+    "href": "content/templates/linux_lab.html#additional-exercises",
+    "title": "Linux Lab Exercise",
+    "section": "Additional Exercises",
+    "text": "Additional Exercises\n\nExercise 1\nExercise 2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Linux Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/linux_lab.html#references",
+    "href": "content/templates/linux_lab.html#references",
+    "title": "Linux Lab Exercise",
+    "section": "References",
+    "text": "References\n\nReference 1\nReference 2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Linux Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/networking_lab.html",
+    "href": "content/templates/networking_lab.html",
+    "title": "Networking Lab Exercise",
+    "section": "",
+    "text": "Lab Information",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Networking Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/networking_lab.html#lab-information",
+    "href": "content/templates/networking_lab.html#lab-information",
+    "title": "Networking Lab Exercise",
+    "section": "",
+    "text": "Lab Title:\nDuration:\nDifficulty Level: [Beginner/Intermediate/Advanced]",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Networking Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/networking_lab.html#objectives",
+    "href": "content/templates/networking_lab.html#objectives",
+    "title": "Networking Lab Exercise",
+    "section": "Objectives",
+    "text": "Objectives\n\nObjective 1\nObjective 2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Networking Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/networking_lab.html#prerequisites",
+    "href": "content/templates/networking_lab.html#prerequisites",
+    "title": "Networking Lab Exercise",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\nRequired Knowledge\n\nKnowledge requirement 1\nKnowledge requirement 2\n\n\n\nRequired Tools/Software\n\nTool 1 (version x.x)\nTool 2 (version x.x)",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Networking Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/networking_lab.html#network-topology",
+    "href": "content/templates/networking_lab.html#network-topology",
+    "title": "Networking Lab Exercise",
+    "section": "Network Topology",
+    "text": "Network Topology\n[Network diagram or topology description]\n\nNetwork Details\n\n\n\nDevice\nIP Address\nSubnet Mask\nGateway\n\n\n\n\nDevice1\nx.x.x.x\nx.x.x.x\nx.x.x.x\n\n\nDevice2\nx.x.x.x\nx.x.x.x\nx.x.x.x",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Networking Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/networking_lab.html#lab-steps",
+    "href": "content/templates/networking_lab.html#lab-steps",
+    "title": "Networking Lab Exercise",
+    "section": "Lab Steps",
+    "text": "Lab Steps\n\nStep 1: [Description]\n# Commands to execute\ncommand1\ncommand2\nExpected Output:\n[Expected output here]\n\n\nStep 2: [Description]\n# Commands to execute\ncommand1\ncommand2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Networking Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/networking_lab.html#verification",
+    "href": "content/templates/networking_lab.html#verification",
+    "title": "Networking Lab Exercise",
+    "section": "Verification",
+    "text": "Verification\n\nVerification Steps\n\nCheck 1\nverification_command1\nCheck 2\nverification_command2\n\n\n\nExpected Results\n\nResult 1\nResult 2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Networking Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/networking_lab.html#troubleshooting",
+    "href": "content/templates/networking_lab.html#troubleshooting",
+    "title": "Networking Lab Exercise",
+    "section": "Troubleshooting",
+    "text": "Troubleshooting\n\nCommon Issues\n\nIssue 1\n\nSolution: [Solution details]\n\nIssue 2\n\nSolution: [Solution details]",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Networking Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/networking_lab.html#additional-exercises",
+    "href": "content/templates/networking_lab.html#additional-exercises",
+    "title": "Networking Lab Exercise",
+    "section": "Additional Exercises",
+    "text": "Additional Exercises\n\nExercise 1\nExercise 2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Networking Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/networking_lab.html#references",
+    "href": "content/templates/networking_lab.html#references",
+    "title": "Networking Lab Exercise",
+    "section": "References",
+    "text": "References\n\nReference 1\nReference 2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Networking Lab Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/troubleshooting.html",
+    "href": "content/templates/troubleshooting.html",
+    "title": "Troubleshooting Template",
+    "section": "",
+    "text": "Issue Description\nBrief description of the problem.",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Troubleshooting Template</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/troubleshooting.html#issue-description",
+    "href": "content/templates/troubleshooting.html#issue-description",
+    "title": "Troubleshooting Template",
+    "section": "",
+    "text": "Symptoms\n\nSymptom 1\nSymptom 2\n\n\n\nEnvironment\n\nOS Version:\nSoftware Version:\nRelevant Configurations:",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Troubleshooting Template</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/troubleshooting.html#diagnosis-steps",
+    "href": "content/templates/troubleshooting.html#diagnosis-steps",
+    "title": "Troubleshooting Template",
+    "section": "Diagnosis Steps",
+    "text": "Diagnosis Steps\n\nStep 1\n\nExpected result\nWhat to check\n\nStep 2\n\nExpected result\nWhat to check",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Troubleshooting Template</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/troubleshooting.html#solution",
+    "href": "content/templates/troubleshooting.html#solution",
+    "title": "Troubleshooting Template",
+    "section": "Solution",
+    "text": "Solution\nDetailed steps to resolve the issue: 1. Solution step 1 2. Solution step 2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Troubleshooting Template</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/troubleshooting.html#prevention",
+    "href": "content/templates/troubleshooting.html#prevention",
+    "title": "Troubleshooting Template",
+    "section": "Prevention",
+    "text": "Prevention\nHow to prevent this issue in the future: - Prevention tip 1 - Prevention tip 2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Troubleshooting Template</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/troubleshooting.html#related-issues",
+    "href": "content/templates/troubleshooting.html#related-issues",
+    "title": "Troubleshooting Template",
+    "section": "Related Issues",
+    "text": "Related Issues\n\nLink to related issue 1\nLink to related issue 2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Troubleshooting Template</span>"
+    ]
+  },
+  {
+    "objectID": "content/templates/troubleshooting.html#references",
+    "href": "content/templates/troubleshooting.html#references",
+    "title": "Troubleshooting Template",
+    "section": "References",
+    "text": "References\n\nReference 1\nReference 2",
+    "crumbs": [
+      "Templates",
+      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Troubleshooting Template</span>"
+    ]
+  },
+  {
     "objectID": "content/testing/index.html",
     "href": "content/testing/index.html",
     "title": "Software Testing Overview",
@@ -1999,7 +2505,7 @@
     "text": "Why Testing Matters\nThis chapter introduces fundamental concepts in software testing and quality assurance.\nTesting is a crucial part of software development that helps ensure:",
     "crumbs": [
       "Testing",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Software Testing Overview</span>"
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Software Testing Overview</span>"
     ]
   },
   {
@@ -2010,7 +2516,7 @@
     "text": "Reliability\nPerformance\nSecurity\nUser satisfaction",
     "crumbs": [
       "Testing",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Software Testing Overview</span>"
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Software Testing Overview</span>"
     ]
   },
   {
@@ -2021,7 +2527,7 @@
     "text": "Types of Testing\nWe’ll cover various testing approaches:\n\nUnit Testing\nIntegration Testing\nSystem Testing\nPerformance Testing\n\nChoose the right testing strategy based on your project needs.",
     "crumbs": [
       "Testing",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Software Testing Overview</span>"
+      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Software Testing Overview</span>"
     ]
   },
   {
@@ -2033,7 +2539,7 @@
     "crumbs": [
       "Testing",
       "advanced",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Testing Strategies</span>"
+      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Testing Strategies</span>"
     ]
   },
   {
@@ -2045,7 +2551,7 @@
     "crumbs": [
       "Testing",
       "advanced",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Testing Patterns</span>"
+      "<span class='chapter-number'>38</span>  <span class='chapter-title'>Testing Patterns</span>"
     ]
   },
   {
@@ -2057,7 +2563,7 @@
     "crumbs": [
       "Testing",
       "basics",
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Introduction to Testing Basics</span>"
+      "<span class='chapter-number'>39</span>  <span class='chapter-title'>Introduction to Testing Basics</span>"
     ]
   },
   {
@@ -2069,7 +2575,7 @@
     "crumbs": [
       "Testing",
       "basics",
-      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Types of Testing</span>"
+      "<span class='chapter-number'>40</span>  <span class='chapter-title'>Types of Testing</span>"
     ]
   },
   {
@@ -2081,7 +2587,7 @@
     "crumbs": [
       "Testing",
       "code-examples",
-      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Code Examples Across Languages</span>"
+      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Code Examples Across Languages</span>"
     ]
   },
   {
@@ -2093,7 +2599,7 @@
     "crumbs": [
       "Testing",
       "code-examples",
-      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Code Examples Across Languages</span>"
+      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Code Examples Across Languages</span>"
     ]
   },
   {
@@ -2105,7 +2611,7 @@
     "crumbs": [
       "Testing",
       "code-examples",
-      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Code Examples Across Languages</span>"
+      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Code Examples Across Languages</span>"
     ]
   },
   {
@@ -2117,7 +2623,7 @@
     "crumbs": [
       "Testing",
       "code-examples",
-      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Code Examples Across Languages</span>"
+      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Code Examples Across Languages</span>"
     ]
   },
   {
@@ -2129,7 +2635,7 @@
     "crumbs": [
       "Testing",
       "code-examples",
-      "<span class='chapter-number'>35</span>  <span class='chapter-title'>Code Examples Across Languages</span>"
+      "<span class='chapter-number'>41</span>  <span class='chapter-title'>Code Examples Across Languages</span>"
     ]
   },
   {
@@ -2141,7 +2647,7 @@
     "crumbs": [
       "Testing",
       "integration-testing",
-      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Integration Testing Strategies</span>"
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>Integration Testing Strategies</span>"
     ]
   },
   {
@@ -2153,7 +2659,7 @@
     "crumbs": [
       "Testing",
       "integration-testing",
-      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Integration Testing Strategies</span>"
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>Integration Testing Strategies</span>"
     ]
   },
   {
@@ -2165,7 +2671,7 @@
     "crumbs": [
       "Testing",
       "integration-testing",
-      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Integration Testing Strategies</span>"
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>Integration Testing Strategies</span>"
     ]
   },
   {
@@ -2177,7 +2683,7 @@
     "crumbs": [
       "Testing",
       "integration-testing",
-      "<span class='chapter-number'>36</span>  <span class='chapter-title'>Integration Testing Strategies</span>"
+      "<span class='chapter-number'>42</span>  <span class='chapter-title'>Integration Testing Strategies</span>"
     ]
   },
   {
@@ -2189,7 +2695,7 @@
     "crumbs": [
       "Testing",
       "unit-testing",
-      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Unit Testing Best Practices</span>"
+      "<span class='chapter-number'>43</span>  <span class='chapter-title'>Unit Testing Best Practices</span>"
     ]
   },
   {
@@ -2201,7 +2707,7 @@
     "crumbs": [
       "Testing",
       "unit-testing",
-      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Unit Testing Best Practices</span>"
+      "<span class='chapter-number'>43</span>  <span class='chapter-title'>Unit Testing Best Practices</span>"
     ]
   },
   {
@@ -2213,7 +2719,7 @@
     "crumbs": [
       "Testing",
       "unit-testing",
-      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Unit Testing Best Practices</span>"
+      "<span class='chapter-number'>43</span>  <span class='chapter-title'>Unit Testing Best Practices</span>"
     ]
   },
   {
@@ -2225,7 +2731,7 @@
     "crumbs": [
       "Testing",
       "unit-testing",
-      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Unit Testing Best Practices</span>"
+      "<span class='chapter-number'>43</span>  <span class='chapter-title'>Unit Testing Best Practices</span>"
     ]
   },
   {
@@ -2237,7 +2743,7 @@
     "crumbs": [
       "Testing",
       "unit-testing",
-      "<span class='chapter-number'>37</span>  <span class='chapter-title'>Unit Testing Best Practices</span>"
+      "<span class='chapter-number'>43</span>  <span class='chapter-title'>Unit Testing Best Practices</span>"
     ]
   }
 ]
